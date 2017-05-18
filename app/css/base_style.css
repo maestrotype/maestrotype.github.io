@@ -218,22 +218,30 @@ header{
 	position: relative;
 }
 
-.sign_text:before {
+.sign_text > a:before {
 	content: "\e902";
 	position: absolute;
-	top: -5px;
-	font-size: 1.7em;
-	left: -15px;
+	top: -20px;
+	font-size: 1.5em;
+	left: -25px;
 	font-family: icons;
 }
 
-.registration_text:before {
+.registration_text > a:before {
 	content: "\e901";
 	position: absolute;
-	top: -5px;
-	font-size: 1.7em;
-	left: -15px;
+	top: -20px;
+	font-size: 1.5em;
+	left: -25px;
 	font-family: icons;
+}
+
+.sign_text > a:hover{
+	color: #356bcb;
+}
+
+.registration_text > a:hover{
+	color: #74ac05;
 }
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::_EXTRA_MENU_:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -1626,6 +1634,16 @@ footer > .container > ul > li:nth-child(1){
 	border: 1px solid #cab79e;
 	display: inline-block;
 	text-align: center;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+#follow_vk:hover,#follow_fb:hover,#follow_tw:hover{
+	background-color: #5B7FA6;
+	cursor: pointer;
 }
 
 #follow_vk{
@@ -1692,11 +1710,19 @@ footer > .container > ul > li:nth-child(1){
 }
 
 .tw_show{
-	background-color: red;
+	background-image: url("../img/footer/vk_follow.jpg");
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .fb_show{
-	background-color: green;
+	background-image: url("../img/footer/vk_follow.jpg");
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .vk_show{
