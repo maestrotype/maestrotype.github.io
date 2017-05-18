@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- ........................META_TEG..................................... -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<!-- <meta name="viewport" content="width=600, user-scalable=yes"> -->
+<!-- ........................META_TEG..................................... -->
+
+<title>Document</title>
+<!-- <link rel="shortcut icon" href="app/image/favicon/icon.png" /> -->
+<link rel="alternate" hreflang="ru" />
+
+<!-- ..........................CSS........................................ -->
+<link rel="stylesheet" href="app/css/base_style.css" media="all" type="text/css" />
+<link rel="stylesheet" href="app/css/media_style.css" media="all" type="text/css"/>
+<!-- ..........................CSS........................................ -->
+
+<!-- ..........................JS......................................... -->
+<script type="text/javascript" src="app/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="app/js/slider.js"></script>
+<script>
+$(document).ready(function(){
+	$("#mobile_menu").click(function(){
+		$("#dropdown").slideToggle();
+	});
+});
+</script>
+<!-- ..........................JS......................................... -->
+
+</head>
+<body>
+
+<!-- ......................START_HEADER...................................... -->
+<header>
+	<div class="extra_menu">
+		<div class="container">
+			<nav>
+				<ul>
+					<li class="about"><a href="/" class="about_link">Про нас</a></li>
+					<li class="pay"><a href="/" class="pay_link">Оплата/Доставка</a></li>
+					<li class="partners"><a href="/" class="partners_link">Спiвпраця</a></li>
+					<li class="contacts"><a href="/" class="contacts_link">Контакти</a></li>
+					<li class="btn_blog"><a href="/" class="blog_link">Новинний блог</a></li>
+					<li class="btn_pay"><a href="/" class="btn_pay_link">Безкоштовнi поради</a></li>
+				</ul>
+			</nav>
+
+			<ul>
+				<li class="sign">
+					<span class="sign_img"></span><span class="sign_text"><a href="/">Вхiд</a></span>
+				</li>
+
+				<li class="registration">
+					<span class="registration_img"></span><span class="registration_text"><a href="/">Реестрацiя</a></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header_top">
+		<div class="container">
+			<div class="logotype"><a href="#"></a></div>
+
+			<div class="phone_search">
+				<div class="information">
+					<p class="phone">+38(057) 731-96-35</p>
+					<p class="data">пн.-пт. 9.00 - 18.00 сб.-нд. вихідні</p>
+				</div>
+
+				<form action="">
+					<input type="text" class="search">
+				</form>
+			</div>
+
+			<div class="basket">
+				<p class="my_basket">Мiй кошик</p>
+				<p class="product">Товарiв: <span>2 одиниць</span></p>
+				<p class="summa">На суму: <span>20 000 грн</span></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="slogan">
+		<div class="container">
+			<h1 class="slogan_text">Нашi книги для гармонійного розвитку Вашої дитини</h1>
+
+			<div class="social">
+				<span>Ми завжди поряд</span>
+				<span class="social_vk"></span>
+				<span class="social_fb"></span>
+				<span class="social_tw"></span>
+				<span class="social_in"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_menu">
+		<div class="container">
+			<nav>
+				<li class="mobile_menu" id="mobile_menu"></li>
+				<li class="mobile_search"></li>
+				<li class="mobile_reg"></li>
+				<li class="mobile_basket"></li>
+				<ul class="dropdown" id="dropdown">
+					<span class="menu_line"></span>
+					<li class="love_book">
+						<a href="/">
+							<img src="app/img/header/love_book.png" alt="love">
+							<p>Книги про вiдносини</p>
+						</a>
+					</li>
+					<span class="menu_line"></span>
+					<li class="health_book">
+						<a href="/">
+							<img src="app/img/header/health_book.png" alt="health">
+							<p>Книги про здоровя</p>
+						</a>
+					</li>
+					<span class="menu_line"></span>
+					<li class="edu_book">
+						<a href="/">
+							<img src="app/img/header/edu_book.png" alt="edu">
+							<p>Книги про розвиток</p>
+						</a>
+					</li>
+					<span class="menu_line"></span>
+					<li class="good_book">
+						<a href="/">
+							<img src="app/img/header/good_book.png" alt="good">
+							<p>Книги про добробут</p>
+						</a>
+					</li>
+					<span class="menu_line"></span>
+					<li class="suvenir_book">
+						<a href="/">
+							<img src="app/img/header/suvenir_book.png" alt="suvenir">
+							<p>Сувенирна продукция</p>
+						</a>
+					</li>
+					<span class="menu_line"></span>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="crumbs">
+		<div class="container">
+			<a href="#" class="go_home"><img src="app/img/header/crumbs_home.png" alt="go_start_page"></a>
+			<span class="crumbs_arrow"></span>
+			<a href="/" class="crumb ">Хлебние крошки</a>
+			<span class="crumbs_arrow"></span>
+			<a href="/" class="crumb active_page">Хлебние крошки</a>
+		</div>
+	</div>
+</header>
+<!-- ......................FINISH_HEADER..................................... -->
+
+<!-- ......................START_MAIN........................................ -->
+<section class="slider" id="slider">
+	<div class="container">
+		<div class="slider_wrap">
+			<div class="slide first">
+				<div class="slide_img"><img src="app/img/slider/first_slide.png" alt="title"></div>
+				<div class="slide_text">
+					<h2>Витражный</h2>
+					<p>мастер-класс</p>
+					<p>Груповые творчиские занятия</p>
+				</div>
+			</div>
+			<div class="slide second">
+				<div class="slide_text">
+					<h2>Привет, второй слайд</h2>
+				</div>
+			</div>
+			<div class="slide third">
+				<div class="slide_text">
+					<h2>Привет, третий слайд!</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="products" id="products">
+	<div class="container">
+		<div class="products_img">
+			<img src="app/img/products/book.jpg" alt="book">
+			<div class="new">Новинка</div>
+		</div>
+
+		<ul>
+			<li class="title_book">Такі різні діти. Книга для батьків, яких ніхто не навчав педагогіки</li>
+
+			<li class="author"><span>Автор......</span><span>А. Гресь</span></li>
+
+			<li class="seria"><span>Серія.......</span><span>"Для турботливих батьків"</span></li>
+
+			<li class="age"><span>Вік............</span><span>від 0 до 15</span></li>
+
+			<li class="short_text">Батьки зазвичай порівнюють свою дитину з іншими дітьми. Чому Петрик уже вміє читати, а мій Мишко ще ні? Ось Катруся не боїться на уроці відповідати, а ти?.. — такі слова знайомі багатьом батькам. Можливо, краще все-таки не порівнювати, а подумати – у чому унікальність і неповторність вашої дитини. Ця книга допоможе батькам зрозуміти, як виховувати свою дитину — таку особливу і не схожу на інших.</li>
+
+			<li class="button">
+				<span class="price">75 грн.</span>
+				<a href="/" class="btn_price">Переглянути</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="carousel_book" id="carousel_book">
+	<div class="container">
+		<div class="arrow_left"></div>
+		<div class="carousel">
+			<div class="book hit">
+				<img src="app/img/book_carousel/book1.jpg" alt="book">
+				<div class="hit">Хит</div>
+			</div>
+
+			<div class="book recomennd">
+				<img src="app/img/book_carousel/book2.jpg" alt="book">
+				<div class="recomennd">Рекомендуємо</div>
+			</div>
+
+			<div class="book soon_sale">
+				<img src="app/img/book_carousel/book3.jpg" alt="book">
+				<div class="soon_sale">Скоро у продажу</div>
+			</div>
+
+			<div class="book limited">
+				<img src="app/img/book_carousel/book4.jpg" alt="book">
+				<div class="limited">Обмежена кількість</div>
+			</div>
+
+			<div class="book absent">
+				<img src="app/img/book_carousel/book5.jpg" alt="book">
+				<div class="absent">Тимчасово відсутня</div>
+			</div>
+		</div>
+		<div class="arrow_right"></div>
+	</div>
+</section>
+
+<section class="blog" id="blog">
+	<div class="container">
+		<div class="news_blog">
+			<div class="wrap_blog">
+				<div class="blog_container">
+					<h4>Новинний блог</h4>
+					<h5>Такі різні діти</h5>
+					<p>Тут ви знайдете безлыч корисно<br>інформацы про наших, каких пізних дітей.<br> А ми, в свою чергу, спробуємо допомогти вам<br> їх зрозуміти.</p>
+					<a href="/" class="btn_news_blog">Перейти</a>
+				</div>
+			</div>
+			<img src="app/img/blog/elem1.png" alt="elem">
+		</div>
+
+		<div class="free_blog">
+			<div class="wrap_blog">
+				<div class="blog_container">
+					<h4>Безкоштовнi поради</h4>
+					<h5>смачні вітаміни</h5>
+					<p>У нас є для вас безліч порад. Тут ви знайдете<br> безлыч корисно інформацы про наших,<br>каких пізних дітей. А ми, в свою чергу,<br>спробуємо допомогти вам їх зрозуміти.</p>
+					<a href="/" class="btn_free_blog">Перейти</a>
+				</div>
+			</div>
+			<img src="app/img/blog/elem2.png" alt="elem">
+		</div>
+	</div>
+</section>
+
+<section class="advt" id="advt">
+	<div class="container"></div>
+</section>
+
+<section class="about_us" id="about_us">
+	<div class="container">
+		<h2>Про наше видавництво</h2>
+		<p>Вас вітає Видавнича група  «Основа» — загальновизнаний лідер на ринку науково-методичної літератури й педагогічної преси, досвідчений експерт у питаннях педагогіки, психології й виховання. Нам довіряють понад 120 тисяч освітян, які, рік у рік, передплачують наші журнали.
+		<br>
+		<br>
+		Ми розпочали працювати 2002 року, 26 червня було зареєстровано перші шість журналів.  Минали роки, довкола все змінювалось, ми росли та розвивалися, наша віра у свою справу та любов до нашого читача сприяли висуненню нових ідей та надихала робити свою справу ще краще.
+		<br>
+		<br>
+		З 2010 р. Видавнича група «Основа» почала випускати журнали  на території Російської федерації.</p>
+
+		<h3>Отже, 2014 року ми випускаємо</h3>
+		<ul>
+			<li class="">
+				<span class="circle">31</span>
+				<span>науково-методичний журнал<br>для всіх категорій працівників школи</span>
+			</li>
+
+			<li class="">
+				<span class="circle">11</span>
+				<span>пізнавально-розважальних<br>журналів для учнів</span>
+			</li>
+
+			<li class="">
+				<span class="circle">2</span>
+				<span>журнали<br>для батьків</span>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="clients" id="clients">
+	<div class="container">
+		<h2>Партнери</h2>
+		<ul>
+			<li><img src="app/img/clients/brand1.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand2.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand3.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand4.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand1.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand2.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand3.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand4.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand1.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand2.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand3.png" alt="clients"></li>
+			<li><img src="app/img/clients/brand4.png" alt="clients"></li>
+		</ul>
+		<a href="/" class="more_clients">Дивитися всіх партнерів</a>
+	</div>
+</section>
+
+<section class="idea_day">
+	<div class="container">
+		<div class="idea_img"><img src="app/img/idea/baby.jpg" alt="baby"></div>
+		<div class="idea_text">
+			<h5>Ідея дня</h5>
+			<p>Розвиваючі ігри з дитиною віку 1 рік -1 рік 3 міс.</p>
+			<p>Завдання всіх цих ігор - навчити малюка виконувати взаємопов'язані прямі і зворотні дії з предметами. Наприклад: розкладати і збирати , виймати і вкладати , перекладати кульки в коробку , відерце , скачувати їх по жолобку , розкладати і збирати кольорові вкладиші, нанизувати пірамідку, вкладати порожнисті предмети.</p>
+			<a href="" class="idea_btn">Читати повністю</a>
+		</div>
+	</div>
+</section>
+
+<section class="subscribe" id="subscribe">
+	<div class="container">
+		<div class="subscribe_text">
+			<p>Підписка</p>
+			<p>Дізнайтесь першими про всі новини</p>
+		</div>
+
+		<form action=""><input type="text" placeholder="E-mail"><button>Підписатись</button></form>
+	</div>
+</section>
+<!-- ......................FINISH_MAIN....................................... -->
+
+<!-- ......................START_FOOTER...................................... -->
+<footer>
+	<div class="container">
+		<ul>
+			<li class="footer_follow">
+				<div class="follow_social">
+					<span class="follow_vk on" id="follow_vk"></span>
+					<span class="follow_fb" id="follow_fb"></span>
+					<span class="follow_tw" id="follow_tw"></span>
+				</div>
+
+				<div class="follow_social_show">
+					<div class="vk_show show" id="vk_show"></div>
+					<div class="fb_show" id="fb_show"></div>
+					<div class="tw_show" id="tw_show"></div>
+				</div>
+			</li>
+
+			<li class="footer_menu">
+				<ul>
+					<li class="title">Наші розділи</li>
+
+					<li class="">
+						<span class=""><img src="app/img/footer/catalog.png" alt="heart"></span>
+						<span><a href="">Загальний каталог</a></span>
+					</li>
+
+					<li class="">
+						<span class=""><img src="app/img/footer/love_book.png" alt="heart"></span>
+						<span><a href="">Книги про вiдносини</a></span>
+					</li>
+
+					<li class="">
+						<span class=""><img src="app/img/footer/edu_book.png" alt="heart"></span>
+						<span><a href="">Книги про розвиток</a></span>
+					</li>
+
+					<li class="">
+						<span class=""><img src="app/img/footer/health_book.png" alt="heart"></span>
+						<span><a href="">Книги про здоровя</a></span>
+					</li>
+
+					<li class="">
+						<span class=""><img src="app/img/footer/good_book.png" alt="heart"></span>
+						<span><a href="">Книги про добробу</a></span>
+					</li>
+
+					<li class="">
+						<span class=""><img src="app/img/footer/suvenir_book.png" alt="heart"></span>
+						<span><a href="">Сувенірна продукція</a></span>
+					</li>
+				</ul>
+			</li>
+
+			<li class="footer_info">
+				<ul>
+					<li class="title">Корисна iнформацiя</li>
+					<li class=""><a href="">Про нас</a></li>
+					<li class=""><a href="">Оплата/Доставка</a></li>
+					<li class=""><a href="">Новини</a></li>
+					<li class=""><a href="">Спiвпраця</a></li>
+					<li class=""><a href="">Контакти</a></li>
+					<li class=""><a href="">Безкоштовнi поради</a></li>
+				</ul>
+			</li>
+
+			<li class="footer_contact">
+				<ul>
+					<li class="title">Контакти</li>
+					<li class="">+38 (057) 731-96-35</li>
+					<li class="">пн.-пт. 9.00 - 18.00 сб.-нд. вихідні</li>
+					<li class=""><a href="/" class="btn_ask">Поставити питання</a></li>
+				</ul>
+			</li>
+		</ul>
+		<a href="." class="trend_line">Разработка сайта</a>
+	</div>
+</footer>
+<!-- ......................FINISH_FOOTER..................................... -->
+
+<!-- ................................SCRIPT..................................... -->
+
+<!-- ................................SCRIPT..................................... -->
+
+</body>
+</html>

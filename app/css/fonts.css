@@ -1,0 +1,29 @@
+@font-face{
+	font-family: cultbold; 
+	src: url(fonts/cultbold.ttf);
+}
+
+@font-face{
+	font-family: open_sans_light; 
+	src: url(fonts/open_sans_light.ttf);
+}
+
+@font-face{
+	font-family: open_sans; 
+	src: url(fonts/open_sans.ttf);
+}
+
+@font-face{
+	font-family: open_sans_italic; 
+	src: url(fonts/open_sans_italic.ttf);
+}
+
+@font-face{
+	font-family: open_sans_semibold; 
+	src: url(fonts/open_sans_semibold.ttf);
+}
+
+@font-face{
+	font-family: open_sans_bold; 
+	src: url(fonts/open_sans_bold.ttf);
+}
