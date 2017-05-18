@@ -27,3 +27,15 @@
 	font-family: open_sans_bold; 
 	src: url(fonts/open_sans_bold.ttf);
 }
+
+@font-face{
+	font-family:icons;
+	src:url(fonts/icons/icons.eot?6e8eax);
+	src:url(fonts/icons/icons.eot?6e8eax#iefix) 
+	format("embedded-opentype"),url(fonts/icons/icons.ttf?6e8eax) 
+	format("truetype"),url(fonts/icons/icons.woff?6e8eax) 
+	format("woff"),url(fonts/icons/icons.svg?6e8eax#icons) 
+	format("svg");
+	font-weight:400;
+	font-style:normal;
+}

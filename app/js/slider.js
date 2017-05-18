@@ -14,7 +14,7 @@ $(document).ready(function(e) {
 		$('.slide').eq(slideNum).fadeOut(hwSlideSpeed);
 	
 		if(arrow == "next"){
-			if(slideNum == (slideCount + 1)){slideNum=0;    console.log(slideNum)}
+			if(slideNum == (slideCount + 1)){slideNum=0;}
 			else{slideNum++}
 			}
 		else if(arrow == "prew")

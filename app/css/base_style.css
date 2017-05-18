@@ -208,12 +208,32 @@ header{
 	display: inline-block;
 	padding-left: 7px;
 	box-sizing: border-box;
+	position: relative;
 }
 
 .sign_text a,.registration_text a{
 	font-size: 1.4em;
 	color: #333;
 	font-family: "open_sans_light";
+	position: relative;
+}
+
+.sign_text:before {
+	content: "\e902";
+	position: absolute;
+	top: -5px;
+	font-size: 1.7em;
+	left: -15px;
+	font-family: icons;
+}
+
+.registration_text:before {
+	content: "\e901";
+	position: absolute;
+	top: -5px;
+	font-size: 1.7em;
+	left: -15px;
+	font-family: icons;
 }
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::_EXTRA_MENU_:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -427,6 +447,12 @@ h1{
 	color: #d0c0a9;
 	font-size: 1.4em;
 	line-height: 2.5;
+}
+
+.social > span > a{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .social_vk{
@@ -870,6 +896,15 @@ h1{
 	color: #fff;
 	margin-left: 10px;
 	background-color: #9aca3c;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.products > .container > ul > .button > .btn_price:hover{
+	background-color: #698336;
 }
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::_PRODUCTS_::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
@@ -887,8 +922,8 @@ h1{
 	justify-content: space-between;
 }
 
-.carousel_book > .container > .arrow_left,
-.carousel_book > .container > .arrow_right{
+.slick-prev,
+.slick-next{
 	width: 50px;
 	height: 50px;
 	border: 1px solid #c8b49b;
@@ -898,54 +933,72 @@ h1{
 	-o-background-size: 30%;
 	background-size: 30%;
 	background-repeat: no-repeat;
+	z-index: 100;
+	background-color: #FFF;
 }
 
-.carousel_book > .container > .arrow_left{
+.slick-prev{
 	background-image: url("../img/book_carousel/arrow_left.png");
 	background-position: 45% 50%;
-	margin: 111px 0px 111px 15px;
 	cursor: pointer;
 	-webkit-transition: all .2s;
 	-o-transition: all .2s;
 	transition: all .2s;
+	margin-left: 25px;
+	opacity: .4;
+	left: -10%;
 }
-.carousel_book > .container > .arrow_left:hover{
+
+.carousel:hover .slick-prev,.carousel:hover .slick-next{
+	opacity: 1;
+}
+
+.slick-prev:hover{
 	background-color: #d9ffb2;
 }
 
-.carousel_book > .container > .arrow_right{
+.slick-next{
 	background-image: url("../img/book_carousel/arrow_right.png");
 	background-position: 55% 50%;
-	margin: 111px 15px 111px 0px;
 	cursor: pointer;
 	-webkit-transition: all .2s;
 	-o-transition: all .2s;
 	transition: all .2s;
+	margin-right: 25px;
+	opacity: .4;
+	right: -10%
 }
-.carousel_book > .container > .arrow_right:hover{
+.slick-next:hover{
 	background-color: #d9ffb2;
 }
 
 .carousel{
 	max-width: 1010px;
 	width: 85%;
-	overflow: hidden;
 	height: 272px;
 	display: flex;
+	margin: 0 auto;
 }
 
-.carousel_book > .container > .carousel > .book{
+.book{
 	width: 183px;
 	height: 272px;
 	margin-left: 20px;
 	position: relative;
 }
 
-.carousel_book > .container > .carousel > .book > .hit,
-.carousel_book > .container > .carousel > .book > .recomennd,
-.carousel_book > .container > .carousel > .book > .soon_sale,
-.carousel_book > .container > .carousel > .book > .limited,
-.carousel_book > .container > .carousel > .book > .absent{
+.book > a{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;
+}
+
+.book > a > .hit,
+.book > a > .recomennd,
+.book > a > .soon_sale,
+.book > a > .limited,
+.book > a > .absent{
 	position: absolute;
 	height: 37px;
 	-webkit-background-size: 100%;
@@ -961,27 +1014,27 @@ h1{
 	color: #fff;
 }
 
-.carousel_book > .container > .carousel > .book > .hit{
+.book > a > .hit{
 	width: 93px;
 	background-image: url("../img/book_carousel/hit.png");
 }
 
-.carousel_book > .container > .carousel > .book > .recomennd{
+.book > a > .recomennd{
 	width: 182px;
 	background-image: url("../img/book_carousel/recomennd.png");
 }
 
-.carousel_book > .container > .carousel > .book > .soon_sale{
+.book > a > .soon_sale{
 	width: 182px;
 	background-image: url("../img/book_carousel/soon_sale.png");
 }
 
-.carousel_book > .container > .carousel > .book > .limited{
+.book >  a > .limited{
 	width: 182px;
 	background-image: url("../img/book_carousel/limited.png");
 }
 
-.carousel_book > .container > .carousel > .book > .absent{
+.book > a > .absent{
 	width: 182px;
 	background-image: url("../img/book_carousel/absent.png");
 }
@@ -1042,6 +1095,11 @@ h1{
 	display: inline-block;
 	position: relative;
 	z-index: 10;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
 }
 
 .news_blog > .wrap_blog >  .blog_container{
@@ -1105,7 +1163,19 @@ h1{
 	margin-top: 23px;
 	z-index: 10;
 	display: inline-block;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-ms-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
 }
+
+.wrap_blog > .blog_container > .btn_news_blog:hover,
+.wrap_blog > .blog_container > .btn_free_blog:hover{
+	background-color: #698336;
+}
+
+
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::_BLOG_::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::_ADVT_:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -1296,6 +1366,7 @@ h1{
 	height: 81px;
 	text-align: center;
 	display: flex;
+	margin: auto;
 }
 
 .clients > .container > ul > li > img{
@@ -1547,7 +1618,7 @@ footer > .container > ul > li:nth-child(1){
 	height: 100%;
 }
 
-.follow_vk,.follow_fb,.follow_tw{
+#follow_vk,#follow_fb,#follow_tw{
 	width: 57px;
 	height: 57px;
 	-webkit-border-radius: 50%;
@@ -1557,7 +1628,7 @@ footer > .container > ul > li:nth-child(1){
 	text-align: center;
 }
 
-.follow_vk{
+#follow_vk{
 	background-image: url("../img/footer/vk.png");
 	-webkit-background-size: 20%;
 	-o-background-size: 20%;
@@ -1566,7 +1637,7 @@ footer > .container > ul > li:nth-child(1){
 	background-position: center;
 }
 
-.follow_fb{
+#follow_fb{
 	background-image: url("../img/footer/fb.png");
 	-webkit-background-size: 18%;
 	-o-background-size: 18%;
@@ -1575,7 +1646,7 @@ footer > .container > ul > li:nth-child(1){
 	background-position: center;
 }
 
-.follow_tw{
+#follow_tw{
 	background-image: url("../img/footer/tw.png");
 	-webkit-background-size: 35%;
 	-o-background-size: 35%;
@@ -1585,7 +1656,7 @@ footer > .container > ul > li:nth-child(1){
 }
 
 
-.follow_fb,.follow_tw{
+#follow_fb,#follow_tw{
 	margin-top: 18px;
 }
 
@@ -1606,6 +1677,10 @@ footer > .container > ul > li:nth-child(1){
 	border-color: transparent transparent transparent #5B7FA6;
 }
 
+.hide{
+	display: none;
+}
+
 .follow_social_show{
 	width: 270px;
 	height: 100%;
@@ -1616,11 +1691,15 @@ footer > .container > ul > li:nth-child(1){
 	height: 100%;
 }
 
-.fb_show,.tw_show{
-	display: none;
+.tw_show{
+	background-color: red;
 }
 
-.show{
+.fb_show{
+	background-color: green;
+}
+
+.vk_show{
 	background-image: url("../img/footer/vk_follow.jpg");
 	-webkit-background-size: 100%;
 	-o-background-size: 100%;
@@ -1776,6 +1855,11 @@ footer > .container > ul > li:nth-child(4) > ul > li:nth-child(4){
 	border-radius: 20px;
 	text-align: center;
 	margin-top: 15px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
 }
 
 footer > .container > ul > li:nth-child(4) > ul > li:nth-child(4) > a{

@@ -14,6 +14,9 @@
 <link rel="alternate" hreflang="ru" />
 
 <!-- ..........................CSS........................................ -->
+<link rel="stylesheet" type="text/css" href="app/css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="app/css/slick-theme.css"/>
+
 <link rel="stylesheet" href="app/css/base_style.css" media="all" type="text/css" />
 <link rel="stylesheet" href="app/css/media_style.css" media="all" type="text/css"/>
 <!-- ..........................CSS........................................ -->
@@ -50,11 +53,11 @@ $(document).ready(function(){
 
 			<ul>
 				<li class="sign">
-					<span class="sign_img"></span><span class="sign_text"><a href="/">Вхiд</a></span>
+					<span class="sign_text"><a href="/">Вхiд</a></span>
 				</li>
 
 				<li class="registration">
-					<span class="registration_img"></span><span class="registration_text"><a href="/">Реестрацiя</a></span>
+					<span class="registration_text"><a href="/">Реестрацiя</a></span>
 				</li>
 			</ul>
 		</div>
@@ -89,10 +92,10 @@ $(document).ready(function(){
 
 			<div class="social">
 				<span>Ми завжди поряд</span>
-				<span class="social_vk"></span>
-				<span class="social_fb"></span>
-				<span class="social_tw"></span>
-				<span class="social_in"></span>
+				<span class="social_vk"><a href="/"></a></span>
+				<span class="social_fb"><a href="/"></a></span>
+				<span class="social_tw"><a href="/"></a></span>
+				<span class="social_in"><a href="/"></a></span>
 			</div>
 		</div>
 	</div>
@@ -212,34 +215,42 @@ $(document).ready(function(){
 
 <section class="carousel_book" id="carousel_book">
 	<div class="container">
-		<div class="arrow_left"></div>
 		<div class="carousel">
 			<div class="book hit">
-				<img src="app/img/book_carousel/book1.jpg" alt="book">
-				<div class="hit">Хит</div>
+				<a href="/">
+					<img src="app/img/book_carousel/book1.jpg" alt="book">
+					<div class="hit">Хит</div>
+				</a>
 			</div>
 
 			<div class="book recomennd">
-				<img src="app/img/book_carousel/book2.jpg" alt="book">
-				<div class="recomennd">Рекомендуємо</div>
+				<a href="/">
+					<img src="app/img/book_carousel/book2.jpg" alt="book">
+					<div class="recomennd">Рекомендуємо</div>
+				</a>
 			</div>
 
 			<div class="book soon_sale">
-				<img src="app/img/book_carousel/book3.jpg" alt="book">
-				<div class="soon_sale">Скоро у продажу</div>
+				<a href="/">
+					<img src="app/img/book_carousel/book3.jpg" alt="book">
+					<div class="soon_sale">Скоро у продажу</div>
+				</a>
 			</div>
 
 			<div class="book limited">
-				<img src="app/img/book_carousel/book4.jpg" alt="book">
-				<div class="limited">Обмежена кількість</div>
+				<a href="">
+					<img src="app/img/book_carousel/book4.jpg" alt="book">
+					<div class="limited">Обмежена кількість</div>
+				</a>
 			</div>
 
 			<div class="book absent">
-				<img src="app/img/book_carousel/book5.jpg" alt="book">
-				<div class="absent">Тимчасово відсутня</div>
+				<a href="">
+					<img src="app/img/book_carousel/book5.jpg" alt="book">
+					<div class="absent">Тимчасово відсутня</div>
+				</a>
 			</div>
 		</div>
-		<div class="arrow_right"></div>
 	</div>
 </section>
 
@@ -356,16 +367,16 @@ $(document).ready(function(){
 	<div class="container">
 		<ul>
 			<li class="footer_follow">
-				<div class="follow_social">
-					<span class="follow_vk on" id="follow_vk"></span>
-					<span class="follow_fb" id="follow_fb"></span>
-					<span class="follow_tw" id="follow_tw"></span>
+				<div class="follow_social" id="follow_social">
+					<span class="select_social on"  id="follow_vk" data-target_social="vk"></span>
+					<span class="select_social"  id="follow_fb" data-target_social="fb"></span>
+					<span class="select_social"  id="follow_tw" data-target_social="tw"></span>
 				</div>
 
-				<div class="follow_social_show">
-					<div class="vk_show show" id="vk_show"></div>
-					<div class="fb_show" id="fb_show"></div>
-					<div class="tw_show" id="tw_show"></div>
+				<div class="follow_social_show" >
+					<div class="vk_show" data-name="vk"></div>
+					<div class="" data-name="fb"></div>
+					<div class="" data-name="tw"></div>
 				</div>
 			</li>
 
@@ -432,7 +443,28 @@ $(document).ready(function(){
 <!-- ......................FINISH_FOOTER..................................... -->
 
 <!-- ................................SCRIPT..................................... -->
+  <script type="text/javascript" src="app/js/slick.min.js"></script>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.carousel').slick({
+			arrows: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			centerMode: true,
+			variableWidth: true
+		});
+	 });
+	$(document).ready(function(){
+		$(".select_social").click(function(){
+			$(".select_social.on").removeClass('on');
+			$(this).addClass('on');
+			$('.follow_social_show > div').attr('class', '');
+			$('[data-name='+$(this).attr('data-target_social')+']').addClass($(this).attr('data-target_social')+'_show');
+		})
+	});
+</script>
 <!-- ................................SCRIPT..................................... -->
 
 </body>
