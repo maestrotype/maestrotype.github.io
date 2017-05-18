@@ -235,7 +235,7 @@
 		margin: 5px 0;
 	}
 	.main_menu > .container > nav > ul > li {
-		width: calc((100% / 5) - 7px);
+		width: calc((100% / 5) - 10px);
 		height: 70px;
 		margin: 5px 0px 5px 0px;
 	}

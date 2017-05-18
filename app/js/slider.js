@@ -27,18 +27,18 @@ $(document).ready(function(e) {
 			}
 		$('.slide').eq(slideNum).fadeIn(hwSlideSpeed, rotator);
 		}
-if(hwNeedLinks){
-var $linkArrow = $('<a id="prew_button" href="#"></a><a id="next_button" href="#"></a>')
-	.prependTo('#slider');      
-	$('#next_button').click(function(){
-		animSlide("next");
-		return false;
-		})
-	$('#prew_button').click(function(){
-		animSlide("prew");
-		return false;
-		})
-}
+// if(hwNeedLinks){
+// var $linkArrow = $('<a id="prew_button" href="#"></a><a id="next_button" href="#"></a>')
+// 	.prependTo('#slider');      
+// 	$('#next_button').click(function(){
+// 		animSlide("next");
+// 		return false;
+// 		})
+// 	$('#prew_button').click(function(){
+// 		animSlide("prew");
+// 		return false;
+// 		})
+// }
 	var $adderSpan = '';
   
 	var pause = false;
