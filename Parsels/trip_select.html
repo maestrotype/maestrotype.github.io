@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Trip select</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	 <script src="https://use.fontawesome.com/b5ea8d3af4.js"></script>
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+	
+	<header class="bg-trip">
+		<div class="fogging">
+			<div class="top-header">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-6 col-sm-6 col-xs-6">
+
+							<a href="index.html" class="logo">
+								<strong>parsels</strong>
+							</a>
+
+						</div>
+
+						<div class="side-mnu col-md-6">
+
+							<div class="hidden-lg col-sm-12 col-xs-6 toggle-mnu"><span class="line" href=""></span></div>
+
+							<ul class="top-mnu col-sm-12">
+								<li class="col-md-4 col-sm-12 col-xs-12 top-link"><a class="top-link" href="search_res.html">how it works?</a></li>
+								<li class="col-md-4 col-sm-12 col-xs-12"><a id="button" class="button" href="trip_select.html">Add a trip</a></li>
+								<li class="col-md-4 col-sm-12 col-xs-12 account"><a class="account" href="my_account.html">My Account</a>
+									<ul class="drop-mnu">
+									<li><a href="parsels_login.html">my account</a></li>
+									<li><a href="parsels_messages.html">messages(2)</a></li>
+									<li><a href="parsel_current_trip.html">current trip</a></li>
+									<li><a href="parsel_trip_list.html">my trips</a></li>
+									<li><a href="">log out</a></li>
+								</ul>
+								</li>
+							</ul>
+
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="content-header row">
+
+				
+				<form action="" class="ellipse">
+					
+					<input class="col-xs-2" type="text" name="from" placeholder="From">
+					<span class="col-xs-1 icon-arrow"></span>
+					<input class="col-xs-2" type="text" name="to" placeholder="To">
+					
+					<span class="calendar col-md-3 col-xs-1">
+
+						<label for="datepicker"><span class="icon-calendar"></label>
+						<input class="datepicker" type="text" id="datepicker" placeholder="17/03/2017">
+	
+					</span>
+
+					<div class="select-time col-xs-3">
+						<a class="active" href="">M<span class="hidden-xs">orning</span></a>
+						<span>|</span>
+						<a href="">E<span class="hidden-xs">vening</span></a>
+					</div>
+
+				</form>
+				
+				</div>
+			</div>
+
+		</header>
+		<section class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="back">
+						<a href="index.html">
+							<i class="fa fa-angle-left" aria-hidden="true"></i>
+							<span>back</span>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="title-trip">
+						<h1>I’m traveling by</h1>
+					</div>
+					<div class="trip-select">
+						<ul>
+							<li>
+								<a href="">
+									<span class="icon-plaine"></span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon-car"></span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon-train"></span>
+									
+								</a>
+							</li>
+						</ul>
+
+						<div class="hover-block">
+							<div class="wrap-checkbox">	
+								<input id="check-7" type="checkbox">
+								<label for="check-7">I am ready to take passenger</label>
+							</div>
+							<div class="wrap-number">
+								<label for="number">Number of available seats</label>
+								<input id="number"	name="number" 	type="number" placeholder="0">
+							</div>
+						</div>
+						
+						<div class="wrapper-select">
+							<div class="wrap-checkbox">	
+								<input id="check-8" type="checkbox">
+								<label for="check-8">I am ready to buy products</label>
+							</div>
+
+							<div class="wrap-button">
+								<a class="link-btn" href="">Save my trip</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer-container container">
+				<div class="footer-row row">
+					<div class="col col-md-4">
+						<a href="index.html" class="logo">
+							<strong>parsels</strong>
+						</a>
+						<p>Copyright 2017 <br />
+All rights reserved</p>
+					</div>
+					<div class="col col-md-4">
+						<ul>
+							<li><a href="">About Us</a></li>
+							<li><a href="">How it works ?</a></li>
+							<li><a href="">News</a></li>
+							<li><a href="">Legal Notice</a></li>
+							<li><a href="">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="col col-md-4">
+						<h5>Still have questions?</h5>
+						<a href="" class="link-btn">contact us</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	<script src="js/scripts.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</body>
+</html>
