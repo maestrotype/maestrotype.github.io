@@ -949,9 +949,9 @@ h1{
 	background-image: url("../img/book_carousel/arrow_left.png");
 	background-position: 45% 50%;
 	cursor: pointer;
-	-webkit-transition: all .2s;
-	-o-transition: all .2s;
-	transition: all .2s;
+	-webkit-transition: background-color background-size .4s ease;
+	-o-transition: background-color background-size .4s ease;
+	transition: background-color background-size .4s ease;
 	margin-left: 25px;
 	opacity: .4;
 	left: -10%;
@@ -963,21 +963,27 @@ h1{
 
 .slick-prev:hover{
 	background-color: #d9ffb2;
+	background-image: url("../img/book_carousel/arrow_left.png");
+	background-repeat: no-repeat;
+	background-position: 45% 55%;
 }
 
 .slick-next{
 	background-image: url("../img/book_carousel/arrow_right.png");
 	background-position: 55% 50%;
 	cursor: pointer;
-	-webkit-transition: all .2s;
-	-o-transition: all .2s;
-	transition: all .2s;
+	-webkit-transition: background-color background-size .4s ease;
+	-o-transition: background-color background-size .4s ease;
+	transition: background-color background-size .4s ease;
 	margin-right: 25px;
 	opacity: .4;
 	right: -10%
 }
 .slick-next:hover{
 	background-color: #d9ffb2;
+	background-image: url("../img/book_carousel/arrow_right.png");
+	background-position: 55% 50%;
+	background-repeat: no-repeat;
 }
 
 .carousel{
@@ -1934,5 +1940,9 @@ footer > .container > ul > li:nth-child(4) > ul > li:nth-child(4):hover{
 	font-size: 1.4em;
 	font-family: open_sans;
 	color: #333;
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+	display: none;
 }
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::_FOOTER_::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
