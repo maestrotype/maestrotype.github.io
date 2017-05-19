@@ -957,9 +957,9 @@ h1{
 	left: -10%;
 }
 
-.carousel:hover .slick-prev,.carousel:hover .slick-next{
+/* .carousel:hover .slick-prev,.carousel:hover .slick-next{
 	opacity: 1;
-}
+} */
 
 .slick-prev:hover{
 	background-color: #d9ffb2;
