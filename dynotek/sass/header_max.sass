@@ -1,0 +1,261 @@
+@import "_var_max.sass"
+
+body
+	font-family: sans-serif
+	font-weight: 400
+	font-size: 16px
+	min-width: 320px
+	background-color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1
+	box-sizing: border-box
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+	padding: 0
+h1,
+.wrap_h1
+	font-size: 1.7em
+
+h2,
+.wrap_h2
+	font-size: 1.4em	
+	
+
+ul,li
+	list-style: none
+	margin: 0
+	padding: 0
+
+i
+	font-family: 'FontAwesome'
+	font-style: normal	
+
+	
+.sidebar
+	background-color: #FFF
+	position: fixed
+	top: 0
+	left: 0
+	width: 75px
+	height: 100%
+	ul
+		+flex_column
+		justify-content: space-between
+		-webkit-justify-content: space-between
+		height: 100%
+		li
+			// height: 75px
+			width: 100%
+			ul
+				li
+					&:first-child
+						background-color: #a4947e
+						text-align: center
+						height: 75px
+						// padding-top: 50px
+						span
+							font-size: 16px
+							color: #252525
+							cursor: pointer
+							+flex_column
+							justify-content: flex-end
+							-webkit-justify-content: flex-end
+							-moz-justify-content: flex-end
+							-ms-justify-content: flex-end
+							padding-bottom: 10px
+							height: 100%
+					&:nth-child(2)
+						span
+							font-size: 20px		
+			&:nth-child(2)
+				ul
+					+flex_column
+					justify-content: space-between
+					-webkit-justify-content: space-between
+					height: 100%
+					li
+						height: 75px
+						background-color: transparent
+						span
+							font-size: 2em
+							color: #a4947e
+							+flex_center
+							height: 100%
+							cursor: pointer
+			&:last-child
+				height: 75px
+				background-color: #000
+				text-align: center
+				span
+					font-size: 2em
+					color: #a4947e
+					+flex_center
+					height: 100%
+					cursor: pointer
+.navigation
+	background-color: #FFF	
+	width: 75px
+	height: 100%
+	position: fixed
+	top: 0
+	right: 0
+	+flex_column
+	ul
+		+flex_column
+		justify-content: space-between
+		-webkit-justify-content: space-between
+		height: 200px
+		li
+			margin: 8px 0
+			a
+				height: 7px
+				width: 7px
+				background-color: #000
+				border-radius: 50%
+				display: block	
+				cursor: pointer
+				+duration(3)
+				&:hover
+					height: 13px
+					width: 13px
+					border-radius: 50%
+					border: 3px solid #000
+					background-color: #FFF
+				&.active
+					height: 13px
+					width: 13px
+					border-radius: 50%
+					border: 3px solid #000
+					background-color: #FFF					
+.wrapper
+	position: relative
+	.main
+		// flex: 24 1 80px
+		// -webkit-flex: 24 1 80px
+		// -moz-flex: 24 1 80px	
+		max-height: 962px
+		margin: 0 75px
+		.first_frame
+			
+		.wrap_slider
+			position: relative
+			
+			.slider
+				
+				.slide
+					background-image: url("../images/max/slide_1.png")
+					background-color: #000
+					background-position: 55% center
+					background-repeat: no-repeat
+					background-size: cover
+					width: 100%	
+					height: 960px
+					&.slide_2
+						background-image: url("../images/max/slide_1.png")
+		.frames
+			position: absolute
+			top: 0
+			width: 100%
+			height: 100%
+			left: 0
+
+			.frames_row_top
+				height: 20%
+				+flex_around
+				.frame_top
+					border-right: 1px solid #fff
+					border-bottom: 1px solid #fff
+					width: 100%
+					z-index: 9
+			.frames_row_center
+				+flex_around
+				height: 60%
+				// height: 596px
+				.frame_center
+					border-right: 1px solid #fff
+					border-bottom: 1px solid #fff
+					width: 100%
+					z-index: 9
+					
+					.block
+						flex: 1 1 50%
+						-webkit-flex: 1 1 50%
+						border-right: 1px solid #fff
+						border-top: 1px solid #fff
+						// background-color: #000
+						// +opacity(6)
+						background-color: rgba(0,0,0, 0.6)
+						+duration(3)
+						cursor: pointer
+						text-align: center
+						.inner_block
+							height: 100%
+							+flex_column
+							span
+								font-size: 7em
+								margin: 12px 0
+								display: inline-block
+								color: #888788
+							p	
+								font-size: 1.1em
+								// white-space: nowrap
+								color: #c9c9c9
+						&:hover
+							background-color: rgba(0,0,0, 0.1)
+								
+					&:first-child
+						+flex_around
+						flex-wrap: wrap
+						-webkit-flex-wrap: wrap
+					&:nth-child(2)
+						text-align: center
+						padding: 90px 0 45px
+						.wrap_h2
+							padding-bottom: 52px
+							h2
+								// font-size: 42px
+								font-family: 'montserratlight'
+								color: #fff
+								margin-bottom: 39px
+								// white-space: nowrap	
+							hr
+								color: #fff
+								width: 60px	
+						.wrap_h1
+							h1
+								
+								color: #fff	
+								white-space: nowrap	
+								font-family: "montserratblack"
+						.wrap_button
+							margin-top: 84px
+							.button
+								background-color: rgba(245, 43, 43, 0)
+								border: 1px solid #fff
+								padding: 30px 70px
+								color: #fff
+								font-size: 1.1em
+								font-family: "montserratblack"
+								text-transform: uppercase
+								+duration(5)
+								&:hover
+									border-radius: 50%
+									color: #000
+					&:nth-child(3)
+						+flex_around
+						flex-wrap: wrap
+						-webkit-flex-wrap: wrap
+				
+
+

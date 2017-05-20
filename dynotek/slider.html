@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>slider</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/normal_product.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/slider.css" />
+	<link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/countdown/jquery.countdown.css" />
+	
+</head>
+<body>
+<section class="slider_css">
+
+<input type="radio" name="ctrl-input" id="c0" checked="checked"/>
+  <input type="radio" name="ctrl-input" id="c1"/>
+  <input type="radio" name="ctrl-input" id="c2"/>
+  <input type="radio" name="ctrl-input" id="c3"/>
+  <label for="c0" class="label"></label>
+  <label for="c1" class="label"></label>
+  <label for="c2" class="label"></label>
+  <label for="c3" class="label"></label>
+  <ul class="slide">
+    <li><img src="images/monitor.png" height="267" width="279" alt=""></li>
+    <li><img src="images/monitor.png" height="267" width="279" alt=""></li>
+    <li><img src="images/monitor.png" height="267" width="279" alt=""></li>
+    <li><img src="images/monitor.png" height="267" width="279" alt=""></li>
+  </ul>
+
+  <label for="c0" title="double click" class="prev">&#8666;</label>
+  <label for="c1" title="double click" class="prev">&#8666;</label>
+  <label for="c2" title="double click" class="prev">&#8666;</label>
+  <label for="c3" title="double click" class="prev">&#8666;</label><br/>
+  <label for="c0" title="double click" class="next">&#8667;</label>
+  <label for="c1" title="double click" class="next">&#8667;</label>
+  <label for="c2" title="double click" class="next">&#8667;</label>
+  <label for="c3" title="double click" class="next">&#8667;</label>
+</section>
+
+<section class="vertical_slider">
+	
+	<div id="myCarousel" class="vertical-slider carousel vertical slide col-md-12" data-ride="carousel">
+            <div class="row">
+                <div class="col-md-4">
+                    <span data-slide="next" class="btn-vertical-slider glyphicon glyphicon-circle-arrow-up "
+                        style="font-size: 30px"></span>  
+                </div>
+                <div class="col-md-8"> 
+                </div>
+            </div>
+            <br />
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                     <img src="images/comp_small.png" height="74" width="74" class="img-responsive">
+                    <!--/row-fluid-->
+                </div>
+                <!--/item-->
+                <div class="item ">
+                     <img src="images/comp_small.png" height="74" width="74" class="img-responsive">
+                    <!--/row-fluid-->
+                </div>
+                <!--/item-->
+                <div class="item ">
+                    <img src="images/comp_small.png" height="74" width="74" class="img-responsive">			
+                    <!--/row-fluid-->
+                </div>
+                <!--/item-->
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <span data-slide="prev" class="btn-vertical-slider glyphicon glyphicon-circle-arrow-down"
+                        style="color: Black; font-size: 30px"></span>
+                </div>
+                <div class="col-md-8">
+                </div>
+            </div>
+        </div>
+ 
+</section>
+
+<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-2.1.4.min.js"></script>
+	
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	
+	<script src="js/common.js"></script>
+	
+	<script src="assets/countdown/jquery.countdown.js"></script>
+	<script src="assets/js/script.js"></script>
+	<!--script-galleri-->
+	
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+	<!--vertical_slider-->
+	<script>
+	$(document).ready(function () {
+ 
+    $('.btn-vertical-slider').on('click', function () {
+ 
+        if ($(this).attr('data-slide') == 'next') {
+            $('#myCarousel').carousel('next');
+        }
+        if ($(this).attr('data-slide') == 'prev') {
+            $('#myCarousel').carousel('prev')
+        }
+ 
+    });
+});
+	</script>
+	<!--end_vertical_slider-->
+</body>
+</html>

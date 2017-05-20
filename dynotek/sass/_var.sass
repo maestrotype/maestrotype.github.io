@@ -1,0 +1,248 @@
+$main-color: #b11313
+$slr_btn: #c52838
+$clr_btn: #cd1b1b
+$clr_slider: #1b1b1b
+$clr_vraptor: #ff5616
+$clr_megalodon: #1034a6
+$clr_p_gray: #737373
+$clr_vraptor_alt: #f04200
+$clr_shark: #0077b9
+$clr_shark_alt: #0063af
+$clr_trex: #ff1717
+$clr_trex_alt: #d70606
+$clr_gray: #898989
+$clr_footer: #ff4132
+$clr_footer_2: #f52b2b
+$clr_light_gray: rgba(209, 209, 209, 0.65)
+
+
+@mixin opacity($p) 
+ opacity: $p*0.1
+ -webkit-opacity: $p*0.1
+ -khtml-opacity: $p*0.1
+ -moz-opacity: $p*0.1
+ filter: alpha(opacity=$p)
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$p)";
+	
+@mixin transition($t)	
+	-webkit-transition: all $t*0.1s ease
+  -moz-transition: all $t*0.1s ease
+  -ms-transition: all $t*0.1s ease
+  -o-transition: all $t*0.1s ease
+  transition: all $t*0.1s ease
+
+@mixin duration($a)  
+	-webkit-transition-duration: $a*0.1s 
+	-o-transition-duration: $a*0.1s 
+	-moz-transition-duration: $a*0.1s 
+	transition-duration: $a*0.1s 
+
+@mixin translate($m)  
+	transform: translate3d(0px, $m*10px, 0px)
+	-webkit-transform: translate3d(0px, $m*10px, 0px)
+	-moz-transform: translate3d(0px, $m*10px, 0px)
+	-ms-transform: translate3d(0px, $m*10px, 0px)
+	-o-transform: translate3d(0px, $m*10px, 0px)
+
+@mixin scale($s)	
+	-webkit-transform: scale($s*0.1)
+	-moz-transform: scale($s*0.1)
+	-o-transform: scale($s*0.1)
+	-ms-transform: scale($s*0.1)
+	transform: scale($s*0.1)
+@mixin rotate($r)
+	transform: rotate($r)
+	-webkit-transform: rotate($r)
+	-moz-transform: rotate($r)
+	-ms-transform: rotate($r)
+	-o-transform: rotate($r)
+
+@mixin flex_center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex	
+	align-items: center
+	-webkit-align-items: center
+	-moz-align-items: center
+	-ms-align-items: center
+	-o-align-items: center
+	justify-content: center
+	-webkit-justify-content: center
+	-moz-justify-content: center
+	-ms-justify-content: center
+	-o-justify-content: center
+
+@mixin flex_left
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-start
+	-webkit-justify-content: flex-start
+	-moz-justify-content: flex-start
+	-ms-justify-content: flex-start
+	-o-justify-content: flex-start		
+
+@mixin flex_right
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-end
+	-webkit-justify-content: flex-end
+	-moz-justify-content: flex-end
+	-ms-justify-content: flex-end
+	-o-justify-content: flex-end	
+
+@mixin flex_around
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex	
+	justify-content: space-around
+	-webkit-justify-content: space-around
+	-moz-justify-content: space-around
+	-ms-justify-content: space-around
+	-o-justify-content: space-around
+
+@mixin flex_around
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex	
+	justify-content: space-around
+	-webkit-justify-content: space-around
+	-moz-justify-content: space-around
+	-ms-justify-content: space-around
+	-o-justify-content: space-around	
+
+@mixin flex_between
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex	
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+	-ms-justify-content: space-between
+	-o-justify-content: space-between	
+
+@mixin flex_column
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex	
+	flex-direction: column
+	-webkit-flex-direction: column
+	-moz-flex-direction: column
+	-ms-flex-direction: column
+	-o-flex-direction: column
+	align-items: center	
+	-webkit-align-items: center	
+	-moz-align-items: center	
+	-o-align-items: center	
+	-ms-align-items: center	
+
+@keyframes myAnimation
+  0%
+    -webkit-transform: translate(100px, 0)
+   
+  100%
+    -webkit-transform: translate(0px, 0px)
+    //+opacity(1)
+	
+
+@-webkit-keyframes myAnimation
+  0%
+    -webkit-transform: translate(100px, 0)
+   
+  100%
+    -webkit-transform: translate(0px, 0px)
+
+@-moz-keyframes myAnimation
+  0%
+    -moz-transform: translate(100px, 0)
+   
+  100%
+    -moz-transform: translate(0px, 0px)    
+    //+opacity(1)
+
+@keyframes rotate
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+@-webkit-keyframes myscale
+	0%
+		+scale(0)
+	
+	100%
+		+scale(10)
+
+@-moz-keyframes myscale
+	0%
+		+scale(0)
+	
+	100%
+		+scale(10)				
+
+@keyframes myscale
+	0%
+		+scale(0)
+	
+	100%
+		+scale(10)
+
+@keyframes myhover
+	0%
+		+scale(0)
+		background-color: $main_color
+	
+	100%
+		+scale(10)
+		background-color: $main_color
+
+@-webkit-keyframes myhover
+	0%
+		+scale(9)
+		background-color: $main_color	
+	
+	100%
+		+scale(10)
+		background-color: $main_color	
+
+@-moz-keyframes myhover
+	0%
+		+scale(9)
+		background-color: $main_color	
+	
+	100%
+		+scale(10)
+		background-color: $main_color		
+
+@-ms-keyframes myhover
+	0%
+		+scale(9)
+		background-color: $main_color	
+	
+	100%
+		+scale(10)
+		background-color: $main_color					
+		
+									
+
+
+
+
+
+

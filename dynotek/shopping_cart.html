@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>shopping cart</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/shopping_cart.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+	<header class="header">
+		
+		<div class="top_head fix_head">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="left_menu_icons">
+							
+							<ul>
+								
+								<li>
+									<a title="tel" href="tel:+1234567890">
+									<span class="icon-tele"></span>
+									<i>+1234567890</i>
+									</a>
+								</li>
+
+									<li><a class="icon-fbConverted" href="#"></a></li>
+									<li><a class="icon-twitterConverted" href="#"></a></li>
+
+									<li><a class="icon-pinterestConverted" href="#"></a></li>
+
+									<li><a class="icon-mail" href="#"></a></li>
+								
+							</ul>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+						<div class="right_menu_icons">
+							
+							<ul>
+								
+								<li><a title="search" href="#"><span class="icon-search"></span></a></li>
+
+								<li><a title="e-commerce" href="#"><span class="icon-e-commerce"></span></a></li>
+
+								<li>
+									<span class="icon-user"></span>
+									<a class="log_in" href="#">Log in</a>
+									<a class="sign_in" href="#">Sign in</a>
+								</li>
+								
+							</ul>
+					
+						</div>	
+
+					</div>
+					
+				</div>
+				
+			</div>
+
+		</div>	
+
+		<div class="main_head">
+
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+
+						<div class="logo">
+							
+							<a class="a_logo" title="dynotek" href="index.html">
+								
+								<!--<img alt="dynotek" src="images/logo.png" height="52" width="107">-->
+								<strong class="st_logo">dynotek</strong>
+
+							</a>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-10 col-md-10 col-sm-9 col-xs-9" >
+
+						<nav class="navbar">
+
+							<ul class="nav">
+								
+								<li><a href="V-Raptor_product_family_page.html">V-Raptor</a></li>
+								<li><a href="Megalodon_product_family_page.html">Megalodon</a></li>
+								<li class="T-Rex"><a href="#">T-Rex</a>
+									<div class="wrap_drop_menu">
+										<div class="trex_drop_menu">
+										<div class="wrap_triangle">
+											<div class="triangle"></div>
+										</div>
+											<div class="side_menu">
+												<div class="wrap_head">
+													<h2>T-Rex</h2>
+													<p>Product Series</p>
+												</div>
+												<div class="menu_series">
+													<ul>
+														<li><a href="#"><span>Crimson 
+																		Blazei</span><i class="icon-ctrl"></i></a></li>
+														<li><a href="#"><span>Terrorizer</span><i class="icon-ctrl"></i></a></li>
+														<li><a href="#"><span>Annihilator</span><i class="icon-ctrl"></i></a></li>
+													</ul>
+												</div>
+													
+												<div class="wrap_soc">
+
+												<span>Share with your friends:</span>
+												
+												<div class="soc">
+													<ul>
+														<li><a class="icon-fbConverted" href="#"></a></li>
+														<li><a class="icon-twitterConverted" href="#"></a></li>
+														<li><a class="icon-pinterestConverted" href="#"></a></li>
+														<li><a class="icon-mail" href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+												
+											</div>
+											<div class="banner">
+												<div class="wrap_text">
+													
+													<h2>t-rex</h2>
+													
+													<h3>One life - <br> 
+																one game
+													</h3>	
+
+												</div>
+
+												<div class="wrap_button">
+
+													<button class="button trex_btn">Learn more
+													</button>
+												
+												</div>
+											</div>
+										</div>
+									</div>	
+								</li>
+								<li><a href="V-Raptor_product_series.html">Gaming lines</a></li>
+								<li><a href="category_page.html">Modding</a></li>
+
+							</ul>
+
+						</nav>
+
+						<a href="#" class="toggle-mnu hidden-lg hidden-md hidden-sm"><span></span></a>
+						
+					</div>
+
+				</div>
+
+			</div>	
+			
+		</div>
+		
+	</header>
+
+		<sidebar class="right_side fix">
+			
+			<ul>
+				
+				<li class="active"><span title="menu"></span></li>
+				<li><span class="icon-user" title="login"></span></li>
+				<li id="search_click"><span class="icon-search" title="search"></span>
+
+					<ul class="search_click">
+							<li class="wrap_search">
+								
+								<div class="wrap_input_search">
+									<input class="input_search" type="text" placeholder="Search...">
+									<button class="button_search"><i class="icon-search"></i></button>
+								</div>
+
+							</li>
+	
+							<li style="border-left: none" id="close_search"><span href="#"><i class="icon-cross"></i></span></li>
+						</ul>	
+
+				</li>
+				<li id="mail_click"><span class="icon-mail" title="mail"><i>3</i></span>
+
+					<ul class="mail_click">
+							<li class="wrap_mail">
+
+								<div class="block_mail">
+									
+									<h4>Lorem ipsum dolor
+												sit amet</h4>
+									<strong>20%</strong>	
+									<p>Lorem ipsum dolor sit amet, <br>
+										consectetur adipisicing elit, <br>
+										sed do eiusmod tempor <br>
+										incididunt ut labore et</p>	
+									<a href="#">Learn more</a>		
+								</div>
+
+								<div class="block_mail">
+									
+									<h4>Lorem ipsum dolor
+												sit amet</h4>
+									
+									<a href="#">Learn more</a>		
+								</div>
+
+								<div class="block_mail">
+									
+									<h4>Lorem ipsum dolor
+												sit amet</h4>
+									<strong>20%</strong>	
+									
+									<a href="#">Learn more</a>		
+								</div>
+								
+							</li>
+	
+							<li style="border-left: none" id="close_mail"><span><i class="icon-cross"></i></span></li>
+						</ul>	
+
+
+				</li>
+				<li><span title="comment"></span></li>
+
+				<li id="store_click"><span class="icon-e-commerce" title="store"></span>
+
+					<ul class="store_click">
+							<li class="wrap_store">
+
+								<div class="wrap_header">
+									<h5>Items</h5>
+								</div>
+								<div class="item_box">
+									
+									<button class="button_close"><i class="icon-cross"></i></button>
+									<div class="wrap_img"><img src="images/comp_2small.png" height="65" width="44" alt="comp-small"></div>
+									<div class="wrap_price_comp">
+										<div class="name"><h6>Gripper G-1000</h6>
+										<p>QWERTY-QWERTY</p></div>
+										<div class="price">
+											
+											<i> - </i><i> 1 </i><i> + </i><span>1234 </span><span>USD</span>
+
+										</div>
+										
+									</div>
+
+								</div>
+								<div class="item_box">
+									
+									<button class="button_close"><i class="icon-cross"></i></button>
+									<div class="wrap_img"><img src="images/comp_2small.png" height="65" width="44" alt="comp-small"></div>
+									<div class="wrap_price_comp">
+										<div class="name"><h6>Gripper G-1000</h6>
+										<p>QWERTY-QWERTY</p></div>
+										<div class="price">
+											
+											<i> - </i><i> 1 </i><i> + </i><span>1234 </span><span>USD</span>
+
+										</div>
+										
+									</div>
+									
+								</div>
+
+								<div class="total">
+									
+									<div class="side_total">
+										<span>Total items: </span><i>5</i>
+									</div>
+
+									<div class="side_total">
+										<span>cart value: </span><i>4936 $</i>
+									</div>
+
+								</div>
+
+								<div class="summary">
+									
+									<div class="wrap_header">
+										<h5>Summary</h5>
+									</div>
+									<div class="wrap_bothead">
+										<p>Payment method</p>
+									</div>
+
+									<div class="payment_block">
+										
+										<div class="section_block">
+											<div class="wrap_bothead">
+												<p>Credit/debit card - paypal:</p>
+											</div>
+												<div class="price_p">
+													<p>fees USD 21,48<i>?</i>
+													</p>
+												</div>	
+												<button class="button">Check out now</button>
+											
+										</div>
+
+										<div class="section_block">
+											<div class="wrap_bothead">
+												<p>Cash on delivery:</p>
+											</div>
+												<div class="price_p">
+													<p>fees USD 0,00<i>?</i>
+													</p>
+												</div>	
+												<button class="button">Check out now</button>
+											
+										</div>
+
+										<div class="section_block">
+											<div class="wrap_bothead">
+												<p>Bank transfer:</p>
+											</div>
+												<div class="price_p">
+													<p>20% prepayment required<br> 
+																fees USD 9,31<i>?</i>
+													</p>
+												</div>	
+													
+										</div>
+
+									</div>		
+
+								</div>
+
+								<div class="wrap_total">
+										<p>
+										<span>Shipment:</span><i>$ 15,24</i></p>
+										<p><span>Paypal payment<br>
+														commission:</span><i>$ 21,48</i>
+										</p>	
+											<div class="total">
+												<span>Total:</span><i>$ 4936</i>
+											</div>
+											<button class="button">Confirm the order</button>			
+								</div>	
+
+								<div class="login">
+									
+									<div class="wrap_header">
+										<h5>Billing and delivery</h5>
+									</div>
+									<div class="wrap_input">
+										<input type="text" placeholder="Enter your email here">
+										<input type="text" placeholder="Password">
+									</div>
+
+									<button class="button">Login</button>
+									
+								</div>	
+
+								<div class="registrtion">
+									
+									<div class="wrap_bothead">
+										<p>Buy as a guest, <br>
+											no registration</p>
+									</div>
+
+									<div class="wrap_input">
+										<input type="text" placeholder="Enter your email here">
+										<input type="text" placeholder="Password">
+										<input type="text" placeholder="Enter your email here">
+										<input type="text" placeholder="Password">
+										<input type="text" placeholder="Enter your email here">
+										<input type="text" placeholder="Password">
+										<input type="text" placeholder="Enter your email here">
+										<input type="text" placeholder="Password">
+									</div>
+
+									<p>Deliver to Billing Address</p>
+
+									<button class="button">Continue to payment</button>
+
+								</div>	
+
+							</li>
+	
+							<li style="border-left: none" id="close_store"><span><i class="icon-cross"></i></span></li>
+						</ul>	
+
+				</li>
+
+				<li id="soc_click"><span class="icon-share" title="share"></span><br><i>share</i>
+					<ul class="soc_click">
+							<li><a href="#"><i class="fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa-twitter"></i></a></li>
+							<li id="close"><span><i class="icon-cross"></i></span></li>
+						</ul>	
+				</li>
+
+			</ul>
+
+		</sidebar>
+
+<section class="top_section">
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<div class="col-md-12">
+
+				<div class="wrap_head">
+				
+					<p>Continue shopping</p>
+
+					<h3>Shopping cart</h3>
+
+				</div>	
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<main class="main_shopping_cart">
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<div class="col-md-12">
+				
+				<div class="inner_msc">
+					
+					<div class="col-md-8 no_padding col-sm-12">
+						
+						<div class="wrap_content">
+							
+							<div class="wrap_h3">
+								
+								<h3>Items</h3>
+
+							</div>
+
+							<div class="item_block">
+								
+								<div class="wrap_img">
+									<img src="images/comp2.png" height="90" width="53" alt="comp">
+								</div>
+
+								<div class="data-product">
+									<p>Product: <span>Gripper G-1000</span></p>
+									<p>Code: <span>QWERTY-QWERTY</span></p>
+									<p>Price: <span>$ 1234</span></p>
+								</div>
+
+								<div class="wrap_price_comp">
+
+											<div class="icon-cross"></div>
+											
+											<p>Quantity:<i> - </i><i> 1 </i><i> + </i></p>
+											<p>Total:<span>1234 USD</span></p>
+
+										</div>
+							</div>
+							<div class="item_block">
+								
+								<div class="wrap_img">
+									<img src="images/comp2.png" height="90" width="53" alt="comp">
+								</div>
+
+								<div class="data-product">
+									<p>Product: <span>Gripper G-1000</span></p>
+									<p>Code: <span>QWERTY-QWERTY</span></p>
+									<p>Price: <span>$ 1234</span></p>
+								</div>
+
+								<div class="wrap_price_comp">
+
+											<div class="icon-cross"></div>
+											
+											<p>Quantity:<i> - </i><i> 1 </i><i> + </i></p>
+											<p>Total:<span>1234 USD</span></p>
+
+										</div>
+							</div>
+							<div class="item_block">
+								
+								<div class="wrap_img">
+									<img src="images/comp2.png" height="90" width="53" alt="comp">
+								</div>
+
+								<div class="data-product">
+									<p>Product: <span>Gripper G-1000</span></p>
+									<p>Code: <span>QWERTY-QWERTY</span></p>
+									<p>Price: <span>$ 1234</span></p>
+								</div>
+
+								<div class="wrap_price_comp">
+
+											<div class="icon-cross"></div>
+											
+											<p>Quantity:<i> - </i><i> 1 </i><i> + </i></p>
+											<p>Total:<span>1234 USD</span></p>
+
+										</div>
+							</div>
+							<div class="item_block">
+								
+								<div class="wrap_img">
+									<img src="images/comp2.png" height="90" width="53" alt="comp">
+								</div>
+
+								<div class="data-product">
+									<p>Product: <span>Gripper G-1000</span></p>
+									<p>Code: <span>QWERTY-QWERTY</span></p>
+									<p>Price: <span>$ 1234</span></p>
+								</div>
+
+								<div class="wrap_price_comp">
+
+											<div class="icon-cross"></div>
+											
+											<p>Quantity:<i> - </i><i> 1 </i><i> + </i></p>
+											<p>Total:<span>1234 USD</span></p>
+
+										</div>
+							</div>
+
+							<div class="total">
+										
+										<div class="side_total">
+											<span>Total items: </span><i></i>
+										</div>
+
+										<div class="side_total">
+											<span>cart value: </span><i></i>
+										</div>
+
+							</div>
+
+							<div class="wrap_h3">
+									
+									<h3>Billing and delivery</h3>
+
+							</div>
+
+							<div class="red_head">
+				
+								<p>Log-in</p>
+
+							</div>
+
+							<div class="login">
+									
+									<div class="wrap_input">
+										<label for="Email">
+										<p>Email</p>
+											<input type="text" id="Email">
+										</label>
+									</div>	
+
+									<div class="wrap_input">	
+										<label for="First name">
+										<p>First name</p>
+										<input type="text" id="First name">
+										</label>
+									</div>
+
+									<button class="button">Login</button>
+									
+							</div>		
+
+
+							<div class="red_head">
+				
+								<p>Buy as a guest, no registration</p>
+
+							</div>	
+
+							<div class="registration">
+
+								<div class="wrap_input">
+										<label for="Email*">
+										<p>Email *</p>
+											<input type="text" id="Email*">
+										</label>
+								</div>	
+
+								<div class="wrap_input">
+										<label for="ZIP">
+										<p>ZIP *</p>
+											<input type="text" id="ZIP">
+										</label>
+								</div>	
+
+								<div class="wrap_input">
+										<label for="FirstName">
+										<p>First name</p>
+											<input type="text" id="FirstName">
+										</label>
+								</div>	
+
+								<div class="wrap_input">
+										<label for="City">
+										<p>City *</p>
+											<input type="text" id="City">
+										</label>
+								</div>	
+
+								<div class="wrap_input">
+										<label for="LastName">
+										<p>Last name</p>
+											<input type="text" id="LastName">
+										</label>
+								</div>	
+
+								<div class="wrap_input">
+										<label for="ConsigneeAddress">
+										<p>Consignee address *</p>
+											<input type="text" id="ConsigneeAddress">
+										</label>
+								</div>	
+
+								<div class="wrap_input">
+										<label for="Country">
+										<p>Country *</p>
+											<input type="text" id="Country">
+										</label>
+								</div>	
+
+								<div class="wrap_input">
+										<label for="Addressee">
+										<p>Addressee *</p>
+											<input type="text" id="Addressee">
+										</label>
+								</div>	
+
+							</div>
+
+							<div class="wrap_submit">
+								
+								<span>Deliver to Billing Address</span>
+								<button class="button">Continue to payment</button>
+
+							</div>
+	
+
+						</div>
+
+
+					</div>
+
+					<div class="col-md-4 col-sm-12">
+
+						<div class="confirm_the_order">
+
+							<div class="top_head">
+								<span>Summary</span>
+								<button class="button">Confirm the order</button>
+							</div>
+							
+							<div class="payment_block">
+
+								<div class="wrap_bothead">
+											<p>Payment method</p>
+								</div>
+								
+								<div class="section_block red_point">
+											
+										<p>Credit/debit card - paypal:</p>
+											
+										<div class="price_p">
+											<span>fees USD 21,48<i>?</i></span>
+											<button class="button">Check out n</button>
+										</div>	
+													
+								</div>
+
+								<div class="section_block">
+											
+										<p>Bank transfer:</p>
+											
+										<div class="price_p">
+											<span>fees USD 0,00<i>?</i></span>
+											<button class="button">Check out n</button>
+										</div>	
+													
+								</div>
+
+								<div class="section_block">
+											
+										<p>Cash on delivery:</p>
+											
+										<div class="price_p">
+											<span>20% prepayment required fees USD 9,31<i>?</i></span>
+
+										</div>	
+													
+								</div>
+										
+							</div>
+
+							<div class="wrap_total">
+										<p>
+										<span>Shipment:</span><i>$ 15,24</i></p>
+										<p><span>Paypal payment<br>
+														commission:</span><i>$ 21,48</i>
+										</p>	
+											<div class="total">
+												<span>Total:</span><i>$ 4936</i>
+											</div>
+											<button class="button">Confirm the order</button>			
+							</div>				
+								
+						</div> 
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</main>
+
+
+	<footer class="footer">
+		
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="inner_footer">
+
+					<div class="col-md-2 col-sm-4 col-xs-12 wrap-col">
+						
+						<h5>Categories</h5>
+
+						<ul>
+							<li><a href="">Lorem ipsum</a></li>
+							<li><a href="">Lorem ipsum</a></li>
+							<li><a href="">Lorem ipsum</a></li>
+							<li><a href="">Lorem ipsum</a></li>
+							<li><a href="">Lorem ipsum</a></li>
+							<li><a href="">Lorem ipsum</a></li>
+						</ul>	
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-12 wrap-col">
+						
+						<h5>Categories</h5>
+
+						<ul>
+							<li><a href="">Lorem ipsum</a></li>
+							<li><a href="">Lorem ipsum</a></li>
+							<li><a href="">Lorem ipsum</a></li>
+						</ul>	
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-12 wrap-col">
+						
+						<h5>Categories</h5>
+
+						<ul>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+						</ul>	
+
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wrap-col">
+						
+						<h5>Connect with us</h5>
+
+						<div class="soc">
+							
+										<ul>
+											<li><a href="#"><i class="icon-fbConverted"></i></a></li>
+											<li><a href="#"><i class="icon-twitterConverted"></i></a></li>
+											<li><a href="#"><i class="icon-pinterestConverted"></i></a></li>
+											<li><a  href="#"><i class="icon-mail"></i></a></li>
+										</ul>
+
+						</div>
+
+						<div class="submit">
+							
+							<form>
+
+							  <div class="input-submit">
+							    
+							    <input class="input_submit" type="text" placeholder="Your email address">
+							    <button class="button">Subscribe</button>
+							  </div>
+
+							</form>  
+
+						</div>
+
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 wrap-col">
+						
+						<h5>Categories</h5>
+						
+						<ul class="ul_icons">
+							<li><a href="#">Lorem ipsum dolor, Lorem 
+								ipsum dolor</a></li>
+							<li><a href="#">+123456789</a></li>
+							<li><a href="#">e.mail@mail.com</a></li>
+						</ul>
+
+					</div>	
+
+				</div>
+
+				<div class="copyright">
+					
+					<p><span>Terms of use</span><span>Privacy</span>
+					<span>@ 2015 Dynotek. All rights reserved</span></p>
+					
+				</div>
+
+			</div>
+
+		</div>		
+
+	</footer>
+
+
+	<div class="hidden"></div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-2.1.4.min.js"></script>
+	<script src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	<script src="libs/gallery/galleria-1.2.2.min.js"></script>
+	<script src="libs/owl/owl.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/galleria.classic.js"></script>
+	<script src="assets/countdown/jquery.countdown.js"></script>
+	<script src="assets/js/script.js"></script>
+	<!--script-galleri-->
+	<script>
+					// Load the classic theme
+				Galleria.loadTheme('galleria.classic.js');
+						    
+					// Initialize Galleria
+				$('#galleri').galleria();		
+
+	</script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

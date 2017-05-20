@@ -1,0 +1,885 @@
+@import "_var.sass"
+
+.navigation_np
+	min-height: 130px
+	width: 100%
+	padding-top: 100px
+	background: url("../images/vraptor_bg.png") no-repeat center center / cover
+	.nav_np
+		padding: 7px 15px
+		height: 30px
+		max-width: 1170px
+		background-color: #232323
+		margin: 0 auto
+		ul
+			li
+				display: inline-block	
+				margin-right: 15px
+				a
+					color: rgba(255, 255, 255, 0.2)	
+					font-size: 12px
+					&:hover
+						color: $clr_btn
+					&.active
+						color: $clr_btn			
+
+.s_monitor
+	min-height: 488px
+	.gallery
+		height: 452px
+		width: 366px
+		position: relative
+		margin: 0px auto 50px
+		+duration(10)
+		.top_soc
+			position: absolute
+			top: 40px
+			left: 0
+			z-index: 9
+			left: 7%
+			width: 80%
+			
+			&.active
+				-moz-animation: myscale 1s	
+				-webkit-animation: myscale 1s	
+				animation: myscale 1s	
+			&.deactive
+				-moz-animation: myscale 1s	
+				-webkit-animation: myscale 1s	
+				animation: myscale 1s	
+			ul
+				text-align: center
+				li
+					display: inline-block
+					margin-left: 12%
+					a
+						display: block
+						color: $clr_vraptor
+						font-size: 18px
+					
+		.galleria-container
+			background-color: transparent
+			.galleria-stage
+				background-color: #FFF
+				height: 360px
+				width: 356px
+				border: 3px solid #8b8b8b
+
+				.galleria-images 	
+						img
+							height: 290px !important
+							width: 192px !important
+							left: 24% !important
+						a	
+				.galleria-image-nav	
+					left: -5px
+					.galleria-image-nav-right
+						background: #8b8b8b url("../images/arrow.png") no-repeat 170% 50%
+						height: 36px
+						width: 26px
+						top: 50%
+					.galleria-image-nav-left
+						background: #8b8b8b url("../images/arrow.png") no-repeat -70% 50%
+						height: 36px
+						top: 50%
+						width: 26px	
+				.galleria-counter
+					display: none	
+			.galleria-thumbnails-container
+				bottom: 44px
+				height: 80px
+				width: 356px
+				left: 10px
+				.galleria-thumbnails-list
+					margin: 0 auto
+					height: 80px
+					width: 316px
+					.galleria-thumbnails
+						.galleria-image
+							height: 79px
+							width: 79px !important
+							margin: 0px
+							border: 2px solid #8b8b8b
+							&.active
+								border: 2px solid $clr_vraptor
+							&:hover
+								border: 2px solid $clr_vraptor
+							img
+								background-color: #FFF
+								width: 79px !important
+				.galleria-thumb-nav-left
+					display: block	
+					height: 100%
+					background: #8b8b8b url("../images/arrow.png") no-repeat -70% 50%			
+				.galleria-thumb-nav-right
+					display: block
+					height: 100%	
+					background: #8b8b8b url("../images/arrow.png") no-repeat 170% 50%		
+			.galleria-info
+				.galleria-info-link
+					background: none	
+	
+	.info_monitor
+		margin-top: 10px
+		.wrap_h4
+			background-color: $clr_vraptor
+			padding: 16px 14px
+			.left_side
+				width: 60%
+				display: inline-block
+				h4
+					font-size: 80px
+					font-family: 'crookedregular'
+					font-weight: 400
+					color:  #fefefe	
+					text-transform: uppercase
+				p	
+					font-size: 22px
+					font-family: 'proxima_nova_rgregular'
+					color: #fff	
+					margin: 0
+			.soc_side
+				display: inline-block
+				float: right
+				p
+					color: #ee8080
+					font-weight: 600
+					margin: 10px
+				.soc
+					text-align: center
+					ul 
+						li	
+							display: inline-block
+							margin: 0 15px
+							a
+								i
+									font-size: 20px
+									color: #fff 
+							
+	.wrap_rating
+		padding: 6px 15px
+		border-bottom: 1px solid #434343
+		.rating
+			border-right: 1px solid #434343
+			width: 140px
+			padding: 5px
+			display: inline-block
+			span
+				margin-right: 2px
+				color: $clr_vraptor
+				font-size: 20px
+				&:last-child	
+					color: #404040
+					font-size: 20px
+		.rating > span:hover:before
+		  content: "\2605"
+		  position: absolute	
+		.heart
+			display: inline-block
+			color: #5f5f5f
+			padding-left: 14px
+			cursor: pointer
+			i  		
+				font-size: 20px
+				margin-right: 5px
+			span
+				cursor: pointer
+	
+	.wrap_characteristics
+		height: 174px
+		padding: 25px 0
+		border-bottom: 1px solid #434343
+		.charact_block
+			float: left
+			width: 150px
+			margin: 0 45px
+			li
+				color: #fff
+				margin-bottom: 15px
+				height: 30px
+				width: 150px
+				i
+					height: 30px
+					width: 30px
+					display: inline-block
+					margin-right: 10px
+					color: #5f5f5f
+					font-size: 26px
+				span
+					vertical-align: top	
+					display: inline-block
+					width: 105px
+			
+	.wrap_stock
+		height: 152px
+		border-bottom: 1px solid #434343
+		padding: 30px 15px		
+		.wrap_timer		
+			float: left
+			p
+				color: $clr_gray
+				font-weight: 700
+			.timer
+				//margin-top: 22px
+				.countdownHolder
+					width: 224px
+				.countDays
+					position: relative
+					margin-right: 3px
+					&:after
+						content: "Days"	
+						position: absolute
+						bottom: -16px
+						letter-spacing: 1px
+						left: 0
+						width: 40px
+						height: 20px
+						color: #FFF
+						font-size: 14px
+						font-family: "proxima_nova_ltlight"
+						//margin-top: 10px
+				.countHours
+					position: relative
+					margin-right: 3px
+					&:after
+						content: "Hours"	
+						position: absolute
+						bottom: -16px
+						letter-spacing: 1px
+						left: 0
+						width: 40px
+						height: 20px
+						color: #FFF
+						font-size: 14px
+						font-family: "proxima_nova_ltlight"		
+				.countMinutes
+					position: relative
+					margin-right: 3px
+					&:after
+						content: "Minutes"	
+						position: absolute
+						bottom: -16px
+						letter-spacing: 1px
+						left: -6px
+						width: 40px
+						height: 20px
+						color: #FFF
+						font-size: 14px
+						font-family: "proxima_nova_ltlight"	
+				.countSeconds
+					position: relative
+					&:after
+						content: "Seconds"	
+						position: absolute
+						bottom: -16px
+						letter-spacing: 1px
+						left: -2px
+						width: 40px
+						height: 20px
+						color: #FFF
+						font-size: 14px
+						font-family: "proxima_nova_ltlight"							
+		.buy_now
+			float: right
+			background-color: #2b2b2b	
+			padding: 15px 60px
+			.price
+				display: inline-block
+				text-align: center
+				small
+					font-size: 18px
+					color: $clr_gray
+				strong
+					color: #fff
+					font-family: 'proxima_nova_blblack'
+					font-size: 40px
+					font-weight: 100	
+			.button
+				background-color: $clr_vraptor	
+				border: none
+				font-size: 20px
+				color: #fff
+				font-family: 'open_sansextrabold'
+				padding: 18px 45px
+				margin-left: 15px
+				vertical-align: top
+				+duration(5)
+				&:hover
+					+opacity(5)
+					
+
+.vp_section
+	min-height: 212px
+	background-color: $clr_slider
+	.block
+		border-right: 1px solid #313131
+		margin-top: 30px
+		padding: 36px 0px
+		text-align: center
+		&:last-child
+			border: none
+		.wrap_img
+			display: inline-block
+			margin-right: 20px
+			span
+				font-size: 82px
+				color: $clr_vraptor	
+
+		.wrap_text
+			padding-top: 16px
+			display: inline-block
+			text-align: left
+			vertical-align: top
+			strong
+				font-size: 30px
+				color: #fff
+				font-family: 'proxima_nova_blblack'
+				font-weight: 100
+			p
+				color: #fff
+				font-weight: 600	
+
+.s_computer_component_list
+	margin: 20px 0 -30px
+	.section_btn
+		height: 95px
+		margin-top: 10px
+		background: url(../images/sec_btn.png) 
+		.wrap_button
+			margin-top: 10px
+			padding: 20px
+			text-align: center
+			width: 100%
+			.button
+				padding: 15px 65px
+				font-family: 'open_sansextrabold'
+				font-size: 22px
+				color: #fff
+				background-color: $clr_vraptor
+				border: none
+				transition: all 0.5s ease 0.1s
+				&:hover
+					color: $clr_light_gray
+
+	.computer_component_list
+		
+		.wrap_h3
+			background-color: $clr_vraptor
+			padding: 20px 14px
+			max-width: 1140px
+			position: relative
+			h3
+				font-size: 24px
+				font-family: 'proxima_nova_blblack'
+				color:  #fefefe	
+				font-weight: 100
+
+		.wrap_slider
+			position: relative
+			margin-top: 20px
+			.owl-carousel
+				width: 100%
+				.owl-stage-outer
+					height: 528px
+					.owl-item
+						float: none
+
+						.item
+							margin-bottom: 20px
+							height: 160px
+							display: block
+							.block_gpu
+								
+								.wrap_img
+									max-width: 160px
+									height: 160px
+									display: inline-block
+								.info
+									display: inline-block
+									width: 80%
+									vertical-align: top
+									margin-left: 3%
+									border-bottom: 1px solid #737373
+									padding: 5px 0 20px 0
+									.text
+										max-width: 650px
+										width: 74%
+										border-right: 1px solid #737373
+										display: inline-block
+										padding-right: 46px
+
+										h6
+											font-family: 'proxima_nova_blblack'
+											font-size: 24px
+											color: #fff
+											margin-bottom: 28px
+											padding-top: 18px
+										p
+											max-width: 605px
+											color: #fff
+											font-family: 'open_sanslight'
+									.rating
+										display: inline-block
+										vertical-align: top
+										max-width: 266px
+										margin-left: 6%
+										padding-top: 46px
+										.star
+											text-align: center
+											ul
+												li	
+													display: inline-block
+													span
+														font-size: 22px
+														color: #474747
+														font-weight: bold
+														cursor: pointer
+														&:hover
+															color: $clr_vraptor
+														&.active
+															color: $clr_vraptor
+
+
+					.owl-item .active
+						width: 1140px					
+				.owl-controls 
+				
+					.owl-nav
+						position: absolute
+						right: 4%
+						top: -82px
+
+						.owl-prev	
+							display: inline-block
+							transition: all 0.25s ease-in 0s
+							width: 30px
+							height: 30px
+							border: 1px solid #fff
+							background: url(../images/arrow.png) no-repeat -100% 45%
+							&.active
+								background: #303030 url(../images/arrow.png) no-repeat -100% 45%
+							&:hover
+								background: #303030 url(../images/arrow.png) no-repeat -100% 45%
+						.owl-next
+							display: inline-block
+							width: 30px
+							height: 30px
+							border: 1px solid #fff
+							background: url(../images/arrow.png) no-repeat 200% 45%
+							&.active
+								background: #303030 url(../images/arrow.png) no-repeat 200% 45%
+							&:hover
+								background: #303030 url(../images/arrow.png) no-repeat 200% 45%	
+								
+						.owl-dots				
+
+.s_video_block
+	min-height: 502px
+	background-color: #1b1b1b
+	padding: 30px
+	.wrap_video
+		max-width: 630px
+		max-height: 450px
+		border: 1px solid #272727
+
+	.video_info
+		padding-top: 60px	
+		.wrap_h5
+			border-bottom: 1px solid #444
+			padding-bottom: 14px
+			h5
+				font-size: 35px
+				text-transform: uppercase
+				font-family: 'proxima_nova_blblack'
+				font-weight: 100
+				color: $clr_vraptor
+		p	
+			padding-top: 20px
+			font-size: 20px
+			color: #fff	
+		.wrap_button
+			margin-top: 10px
+			padding: 20px
+			text-align: center
+			width: 100%
+			border-bottom: 1px solid #444
+			.button
+				padding: 15px 44px
+				font-family: 'open_sansextrabold'
+				font-size: 22px
+				color: #fff
+				background-color: $clr_vraptor
+				border: none
+				transition: all 0.5s ease 0.1s
+				&:hover
+					color: $clr_light_gray	
+		.wrap_soc
+			padding: 16px 12px
+			span
+				font-size: 18px
+				color: #494949
+				font-family: 'open_sanssemibold'
+				margin-right: 58px
+			.soc
+				display: inline-block
+				ul
+					li
+						display: inline-block
+						margin-right: 30px
+						a	
+							color: #494949
+							font-size: 26px
+
+
+
+
+
+				
+
+.tabs
+	margin-top: 20px
+	.ui-tabs
+		.ui-tabs-nav
+			padding: 0
+			li
+				margin: 0
+				border-right: 1px solid #232323
+	.ui-tabs .ui-tabs-nav	li.ui-state-active,.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor
+		color: $clr_slider
+		background-color: #FFF
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active	
+		color: $clr_slider
+		background-color: #FFF		
+	ul
+		width: 100%
+		background-color: #FFF
+		padding: 0	
+		li	
+			width: 33.333%
+			text-align: left
+			margin: 0
+			line-height: 2
+			a	
+				text-align: center
+				display: inline-block
+				color: #fff
+				width: 100%
+				background-color: $clr_vraptor
+				cursor: pointer
+				padding: 15px 0
+				&:focus
+					color: $clr_slider
+					background-color: #FFF		
+	.content_tab
+		background-color: #FFF
+		padding: 0
+		p			
+			color: $clr_p_gray	
+			padding: 10px 100px
+			min-height: 152px
+	.wrap_button
+			margin-top: 10px
+			padding: 20px
+			text-align: center
+			width: 100%
+			border-top: 1px solid #d3d3d3
+			.button
+				padding: 15px 116px
+				font-family: 'open_sansextrabold'
+				font-size: 22px
+				color: #fff
+				background-color: $clr_vraptor
+				border: none
+				transition: all 0.5s ease 0.1s
+				&:hover
+					color: $clr_light_gray
+
+.s_products_np
+	margin-top: 30px
+	hr
+		max-width: 1140px	
+	.under_hr
+		text-align: right
+		padding-right: 10px
+		span
+			font-size: 15
+			color: #fefefe
+			cursor: pointer
+			position: relative
+			display: inline-block
+			padding-right: 40px
+			&:before
+				content: ""
+				position: absolute
+				right: 16%
+				top: 40%
+				width: 11px
+				height: 7px
+				background: url(../images/arrow_sd.png) no-repeat	
+	.products
+		min-height: 610px
+		.wrap_h3
+			background-color: $clr_btn
+			padding: 20px 14px
+			max-width: 1140px
+			h3
+				font-size: 50px
+				font-family: 'proxima_nova_blblack'
+				color:  #fefefe	
+				font-weight: inherit
+		
+		.wrap_slider
+			position: relative
+			.slider
+				.owl-carousel .owl-controls 
+				
+				.owl-nav
+					position: absolute
+					right: 4%
+					top: -9%
+
+					.owl-prev	
+						display: inline-block
+						transition: all 0.25s ease-in 0s
+						width: 30px
+						height: 30px
+						border: 1px solid #fff
+						background: url(../images/arrow.png) no-repeat -100% 45%
+						&.active
+							background: #303030 url(../images/arrow.png) no-repeat -100% 45%
+						&:hover
+							background: #303030 url(../images/arrow.png) no-repeat -100% 45%
+					.owl-next
+						display: inline-block
+						width: 30px
+						height: 30px
+						border: 1px solid #fff
+						background: url(../images/arrow.png) no-repeat 200% 45%
+						&.active
+							background: #303030 url(../images/arrow.png) no-repeat 200% 45%
+						&:hover
+							background: #303030 url(../images/arrow.png) no-repeat 200% 45%	
+							
+					.owl-dots
+		
+		.item
+			height: 488px
+			background-color: #fff
+			margin: 25px 2px
+			width: 269px
+			border: 3px solid #8b8b8b
+			box-sizing: border-box
+			position: relative
+			//@include transition(100)
+			
+			&:hover
+				border: 5px solid $clr_btn
+				margin: 25px 0px	
+
+				.btn_gd
+					+translate(0)
+					+duration(5)
+
+				.about_content
+					+translate(0)
+					+opacity(10)
+					+duration(9)
+				.top_soc
+					+translate(0)
+					+opacity(10)
+					+duration(9)
+					
+				.wrap_img
+					+scale(11)
+					+duration(9)
+
+			.wrap_img
+				text-align: center
+				margin-top: 24%	
+		
+			.top_soc
+				margin-bottom: -10%
+				+opacity(0)
+				+translate(-1)
+				+duration(9)
+				
+				ul
+					margin-top: 10px
+					text-align: center
+					li
+						display: inline-block
+						a
+							display: block
+							font-size: 18px
+							color: $main_color
+							//background: url(../images/p_icons.png) no-repeat
+							width: 28px
+							height: 18px
+						
+		.wrap_img
+			text-align: center
+			margin-top: 14%
+			img
+				width: 60%
+				display: inline-block
+		.star_about
+				position: absolute
+				bottom: 0 
+				.ul_btn
+					z-index: 9999
+					position: relative
+					margin: 0 -1px
+				.btn_gd
+					padding: 12px 24px
+					margin: 0 auto
+					border: 1px solid #fff
+					text-transform: none
+					text-align: center
+					width: 100%
+					color: #fff
+					font-size: 18px
+					background-color: $main-color
+					+translate(13.5)
+					+duration(9)
+					bottom: 0px
+
+				.about_content
+					height: 134px	
+					padding: 10px 22px
+					background-color: #FFF
+					top: auto
+					+translate(3)
+					+duration(9)
+					+opacity(0)
+					
+
+					.star_head
+						ul
+							text-align: center
+							border-bottom: 1px solid #dbdbdb
+							padding-bottom: 9px
+							li
+								display: inline-block
+								span
+									cursor: pointer
+									display: block
+									width: 21px
+									height: 20px
+									background: url(../images/cont_icons.png) no-repeat
+								&:last-child
+									span
+										background: url(../images/cont_icons.png) no-repeat 35% 0	
+					.wrap_cont
+						padding: 10px
+						.text_cont
+							width: 155px
+							padding-right: 10px
+							margin-bottom: 10px
+							border-right: 1px solid #dbdbdb
+							float: left
+							p
+								margin: 0 0 0 -8px
+								color:  #454545
+								font-size: 14px
+							  
+						.r_icon
+							margin: 25px 0 0 10px
+							float: left
+							span
+								display: block
+								height: 30px
+								cursor: pointer
+								width: 30px
+								background: url(../images/cont_icons.png) no-repeat 100% 100%	
+				.about_content_2,.about_content_3,.about_content_5,.about_content_6,.about_content_8,.about_content_9
+					height: 134px	
+					padding: 10px 22px
+					background-color: #FFF
+					display: none
+					.star_head
+						ul
+							text-align: center
+							border-bottom: 1px solid #dbdbdb
+							padding-bottom: 9px
+							li
+								display: inline-block
+								span
+									cursor: pointer
+									display: block
+									width: 21px
+									height: 20px
+									background: url(../images/cont_icons.png) no-repeat
+								&:last-child
+									span
+										background: url(../images/cont_icons.png) no-repeat 35% 0	
+					.wrap_cont
+						padding: 10px
+						.text_cont
+							width: 155px
+							padding-right: 10px
+							margin-bottom: 10px
+							border-right: 1px solid #dbdbdb
+							float: left
+							p
+								margin: 0 0 0 -8px
+								color:  #454545
+							  
+						.r_icon
+							margin: 25px 0 0 10px
+							float: left
+							span
+								display: block
+								height: 30px
+								cursor: pointer
+								width: 30px
+								background: url(../images/cont_icons.png) no-repeat 100% 100%	
+
+				.ul_btn
+					ul
+						height: 60px
+						li
+							float: left
+							border-right: 1px solid #fff
+							
+							span
+								background-color: $clr_light_gray
+								display: block
+								padding: 20px
+								color:  #5f5f5f
+								text-align: center
+								font-size: 20px
+								font-weight: 900
+								cursor: pointer	
+								font-family: 'proxima_nova_rgregular'
+								height: 60px
+								width: 60px
+								transition: all 0.25s ease-in 0s
+								del
+									font-size: 16px
+									color: #1b1b1b	
+							&:first-child
+								vertical-align: top
+								span
+									padding: 20px 32px
+									width: 137px
+									&.span_del
+										padding: 10px 26px		
+							&:nth-child(2)
+								span
+								 background: $clr_light_gray url(../images/item_icons.png) no-repeat	87% 50%	
+									&:hover
+										background: $main-color url(../images/item_icons.png) no-repeat	-7% 50%
+							&:nth-child(3)
+								border-right: 1px solid $clr_light_gray
+								span
+								 background: $clr_light_gray url(../images/item_icons.png) no-repeat	106% 50%		
+									
+								
+		.col_item
+			padding-left: 0		
+
+
+
+
+//ALWAYS END
+@import "media.sass"

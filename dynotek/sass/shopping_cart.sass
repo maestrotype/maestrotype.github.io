@@ -1,0 +1,378 @@
+@import "_var.sass"
+
+
+.wrap_head
+	height: 115px
+	border-bottom: 1px solid #8b8b8b
+	padding-top: 32px
+	p
+		color: #fff
+	h3
+		margin-top: 25px
+		color: #fff
+		font-size: 35px
+		font-family: 'proxima_nova_rgbold'
+
+.main_shopping_cart
+	margin-top: 28px
+	.inner_msc
+	.no_padding
+		padding-left: 0
+		.wrap_content
+			.wrap_h3
+				padding: 10px 14px
+				width: 100%
+				background-color: $clr_btn
+				h3
+					color: #fff
+					font-family: 'open_sansbold'
+			.item_block
+				min-height: 126px
+				border-bottom: 1px solid #8b8b8b
+				padding: 15px
+				position: relative
+				.wrap_img
+					display: inline-block
+					width: 95px
+					height: 95px
+					background-color: #FFF
+					text-align: center
+					vertical-align: top
+					padding-top: 4px
+				.data-product
+					display: inline-block
+					margin-left: 25px
+					padding-top: 8px
+					vertical-align: middle
+					font-size: 15px
+					p
+						font-family: 'open_sanslight'
+						text-transform: uppercase
+						color: #fff
+						margin-bottom: 16px
+					span
+						font-family: 'open_sanslight'
+						text-transform: uppercase
+						color: #8b8b8b
+						float: right
+						text-align: left
+						margin-left: 9px
+				.wrap_price_comp
+					display: inline-block
+					float: right
+					.icon-cross
+						font-size: 12px
+						text-align: right
+						margin-bottom: 34px
+						cursor: pointer
+						+duration(3)
+						&:hover
+							color: $clr_btn	
+					p	
+						font-family: 'open_sanslight'
+						text-transform: uppercase
+						color: #fff
+						font-size: 15px
+						text-align: center
+						margin-bottom: 18px
+						i
+							color: #8a8a8a
+							margin-left: 22px
+							&:first-child
+								cursor: pointer
+								&:hover
+									color: #fff
+							&:last-child
+								cursor: pointer	
+								&:hover
+									color: #fff
+						span
+							margin-left: 15px
+							color: $clr_btn
+							font-size: 15px	
+
+	.total
+		padding: 28px 15px
+		.side_total
+			&:last-child
+				padding-right: 15px
+				text-align: right	
+		.side_total
+			width: 40%
+			display: inline-block
+			font-size: 15px
+			color: #737373
+			text-transform: uppercase
+			margin: 0 3px 0 0
+			padding: 0
+			text-align: left
+			span
+				font-family: 'open_sansregular'
+				width: 98px
+				font-size: 15px
+				background-image: none
+
+			i	
+				font-family: 'open_sansbold'
+
+	.red_head
+		height: 20px
+		border-bottom: 1px solid $clr_btn	
+		margin: 28px 0
+		p
+			color: $clr_btn
+			text-transform: uppercase	
+			font-family: 'open_sansbold'
+
+	.login
+		.wrap_input
+			display: inline-block
+			color: #fff
+			font-size: 15px
+			margin: 10px 30px 0 0
+			input
+				margin-top: 5px
+				height: 50px
+				width: 254px
+		.button
+			padding: 17px 55px
+			color: #232323
+			font-family: 'open_sansbold'
+			text-transform: uppercase
+			border: none
+			background-color: #8b8b8b	
+			box-sizing: border-box	
+			margin-top: 15px
+			+duration(10)
+			&:hover
+				color: #fff	
+
+	
+	.registration
+		.wrap_input
+			display: inline-block
+			margin-bottom: 25px
+			color: #fff
+			font-size: 15px
+			&:nth-child(even)
+				float: right
+			&:nth-child(7)
+				position: relative
+				&:after
+					content: ""
+					position: absolute
+					width: 46px
+					height: 46px
+					background-color: #8b8b8b
+					right: 2px
+					top: 22px	
+					cursor: pointer
+			input
+				margin-top: 5px
+				height: 50px
+				width: 350px						
+				border: 1px solid #8b8b8b
+
+	.wrap_submit
+		text-align: right
+		margin-bottom: 20px
+		span
+			color: #fff
+			font-size: 15px
+		.button
+			padding: 20px 15px
+			color: #232323
+			font-family: 'open_sansbold'
+			text-transform: uppercase
+			border: none
+			background-color: #8b8b8b	
+			box-sizing: border-box
+			margin-left: 33px	
+			+duration(10)
+			&:hover
+				color: #fff	
+						
+													
+		
+	.confirm_the_order
+		margin-top: 28px
+		border: 1px solid #8b8b8b
+		
+		.top_head
+			border-bottom: 1px solid #8b8b8b
+			padding: 20px 15px
+			span
+				color: #fff
+				text-transform: uppercase
+				display: inline-block
+				width: 32%
+			.button
+				display: inline-block
+				background-color: $clr_btn
+				border: none
+				float: right
+				padding: 10px
+				font-size: 15px
+				text-transform: uppercase
+				font-family: 'open_sansbold'
+				color: #fff
+				box-sizing: border-box
+				vertical-align: center
+				margin-top: -10px
+				&:hover
+					animation: myhover 1s
+					-webkit-animation: myhover 1s
+		.payment_block
+			padding: 14px 12px 0 12px
+			border-bottom: 1px solid #808080
+			.wrap_bothead
+				padding-bottom: 15px
+				text-transform: uppercase
+				font-family: 'open_sansbold'
+				font-weight: 100
+				color: #808080
+				border-bottom: 1px solid #8b8b8b
+			.red_point
+				p
+					&:before
+						content: ""
+						position: absolute
+						left: -18px
+						top: 4px
+						border-radius: 50%
+						width: 7px
+						height: 7px
+						background-color: $clr_btn
+							
+			.section_block
+				padding: 16px 0px 16px 18px	
+				p
+					text-transform: uppercase
+					font-size: 15px
+					color: #fff
+					position: relative
+					
+				.price_p
+					color: #808080
+					font-size: 15px
+					margin-top: 12px
+					span
+						display: inline-block
+						i	
+							border-radius: 50%
+							height: 18px
+							width: 18px
+							background-color: #808080
+							display: inline-block
+							vertical-align: middle
+							margin-left: 5px
+							cursor: pointer
+							padding-top: 2px
+							font-size: 14px
+							color: #232323
+							text-align: center
+					.button
+						padding: 3px 12px
+						background-color: $clr_btn
+						border: none
+						font-family: 'open_sansbold'
+						font-size: 14px
+						color: #fff
+		.wrap_total
+			padding: 15px
+			p
+				text-align: left
+				height: 30px
+				margin-bottom: 28px
+						
+				span
+					font-size: 15px
+					text-transform: uppercase
+					color: #737373
+					font-family: 'open_sansbold'
+					height: 16px
+					float: left
+					padding: 0
+					width: 60%
+
+				i	
+					float: right
+					display: inline-block
+					font-size: 15px
+					color: #808080
+			.total
+				margin-top: 10px
+				height: 20px
+				font-family: 'open_sansbold'
+				span
+					font-size: 18px
+					text-transform: uppercase
+					color: #fff
+					font-weight: 100
+					height: 16px
+					float: left
+					padding: 0
+					text-align: left
+					display: inline-block
+				i	
+					float: right
+					display: inline-block
+					font-size: 22px
+					text-transform: uppercase
+					color: $clr_btn
+					vertical-align: top
+			.button
+				font-size: 16px
+				margin-top: 28px
+				color: #fff	
+				background-color: $clr_btn
+				padding: 7% 24.5%
+				border: none
+				text-transform: uppercase	
+				white-space: nowrap
+				&:hover
+					+duration(3)
+					background-color: green
+					animation: myhover 1s
+					-webkit-animation: myhover 1s							
+			
+							
+							
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "media.sass"

@@ -1,0 +1,717 @@
+@import "_var.sass"
+
+.header_main
+	min-height: 130px
+	width: 100%
+	text-align: center
+	background: url("../images/vraptor_bg.png") no-repeat center center / cover
+	h1
+		font-size: 120px
+		font-family: 'crookedregular'
+		color: #fff	
+
+
+.tabs
+	background-color: #1b1b1b
+	margin-bottom: -30px
+	.ui-tabs
+		padding: 0
+		.ui-tabs-nav
+			padding: 0
+			height: 50px
+			li
+				margin: 0
+				border-right: 1px solid #232323
+
+	.ui-tabs .ui-tabs-nav	li.ui-state-active,.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor
+		color: #fefefe
+		background-color: $clr_vraptor
+		padding: 0
+	.ui-tabs .ui-tabs-nav .ui-tabs-anchor			
+		padding: 0	
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active	
+		color: #fefefe
+		background-color: $clr_vraptor
+		padding: 0	
+	ul
+		width: 100%
+		padding: 0	
+		li	
+			width: 33.333%
+			text-align: left
+			margin: 0
+			line-height: 2
+			a	
+				text-align: center
+				display: inline-block
+				font-family: 'crookedregular'
+				font-size: 50px
+				color: #fefefe
+				width: 100%
+				background-color: #1b1b1b
+				cursor: pointer
+				padding: 0px 100px
+				&:focus
+					color: $clr_slider
+					background-color: #FFF		
+	.content_tab
+		background-color: $clr_vraptor
+		padding: 0
+		.s_sign_up
+			background-color: #232323
+			margin: 0 0 -30px 0
+			padding: 30px 0
+		.wrap_img
+			display: inline-block
+			padding: 22px 4%
+			margin-right: 2%
+			width: 30%
+			vertical-align: top
+		.info_block
+			display: inline-block
+			width: 60%	
+			padding-top: 40px 
+			margin-left: 2%
+			vertical-align: middle
+			.wrap_h4	
+				h4
+					font-size: 50px
+					font-family: 'proxima_nova_blblack'
+					color: #fefefe
+					font-weight: 100
+					border-bottom: 1px solid #ff895c
+					padding-bottom: 10px
+			p			
+				color: #fefefe
+				font-size: 20px
+				padding-top: 30px	
+				min-height: 152px
+			.set_list
+				color: #fff
+				margin-top: 55px
+				ul
+					li	
+						display: inline-block
+						width: 30%
+						span
+							font-size: 44px
+						p
+							line-height: 1
+							font-size: 16px
+							padding: 0
+							margin-top: 15px
+		.s_product_list
+			background-color: #232323
+			margin-top: 30px
+			.product
+				margin-bottom: 18px
+				.wrap_h3
+					height: 56px
+					background-color: $clr_vraptor
+					padding: 16px 12px
+					border: 1px solid #737373
+					h3
+						font-size: 24px
+						font-family: 'proxima_nova_blblack'
+						font-weight: 100
+						color: #fff
+						display: inline-block
+					a
+						font-size: 12px
+						color: #fff
+						float: right
+						padding: 5px 45px 15px 0px
+						display: inline-block
+				.wrap_img
+					background-color: #FFF
+					padding: 20px 4% 36px
+					border: 1px solid #737373
+					display: inline-block	
+					vertical-align: top
+					margin-top: -1px
+					width: auto
+					margin-right: 0
+				.product_content
+					display: inline-block	
+					vertical-align: middle
+					margin-left: -5px
+					width: 77%	
+					.wrap_characteristics
+						margin: 22px 0 40px 0
+						padding-left: 3%
+
+						p
+							color: #fff
+							width: 30%
+							margin-bottom: 18px
+							display: inline-block
+							span
+								color: #737373
+								font-size: 26px
+								vertical-align: middle
+								margin-right: 10px
+
+					.text
+						padding-left: 3%			
+						p
+							color: #fff	
+							span
+								color: $clr_vraptor
+					.wrap_soc
+						display: inline-block
+						width: 100%
+						border-top: 1px solid #737373
+						border-bottom: 1px solid #737373
+						height: 58px
+						margin-top: 65px
+						.soc
+							width: 45%
+							display: inline-block
+							padding-top: 15px
+							ul
+								width: auto
+								li
+									display: inline-block
+									margin-left: 10%
+									width: auto
+									line-height: 0
+									a
+										+duration(5)
+										background: none
+										padding: 0
+										i	
+											font-size: 24px
+											color: $clr_vraptor
+
+										&:hover
+											i
+												color: $main-color	
+
+						.buy_now	
+							margin-right: 3%
+							display: inline-block
+							float: right
+							vertical-align: top
+							width: 46%
+							.price
+								display: inline-block
+								padding-top: 15px
+								margin-right: 8%
+								strong
+									font-size: 30px
+									color: #fff
+									font-family: 'proxima_nova_blblack'
+									
+
+							.button
+								display: inline-block	
+								padding: 20px 12%
+								margin-right: 8%
+								color: #fff
+								height: 100%
+								background-color: $clr_vraptor
+								border: none	
+								vertical-align: top
+								+duration(5)
+								&:hover
+									background-color: $main-color
+							span
+								padding-top: 15px
+								color: #fff
+								font-size: 19px
+								cursor: pointer
+								display: inline-block	
+								+duration(5)
+								&:hover
+									color: $clr_vraptor								
+
+.s_current_promo
+	background: #111 url(../images/sec_btn.png) repeat
+	min-height: 400px
+	padding-top: 60px
+	.current_promo
+		.left_side_cp
+			.wrap_img
+				display: inline-block
+				margin-bottom: 16px
+				width: auto
+				vertical-align: middle
+				padding: 0
+			.block_info
+				display: inline-block
+				vertical-align: middle
+				margin-left: 5%
+				padding-right: 2%
+				margin-bottom: 18px
+				.head_model
+					height: 36px
+					margin-bottom: 22px
+					h6
+						font-family: 'proxima_nova_blblack'
+						font-size: 24px
+						color: #fefefe	
+						font-weight: 100
+						padding: 0
+					a
+						font-size: 12px
+						color: $clr_trex_alt
+						font-family: 'proxima_nova_blblack'
+						font-weight: 100
+						cursor: pointer
+						width: 70px
+						i	
+							
+							font-size: 8px
+							margin-left: 3px
+						&:hover
+							i
+								margin-left: 4px
+				.wrap_characteristics
+					display: inline-block
+					vertical-align: bottom
+					color: #898989
+					margin-top: 14px		
+					p
+						margin-bottom: 8px	
+						span
+							font-size: 25px
+							width: 25px
+							display: inline-block
+							float: none
+							color: #fff
+						i
+							display: inline-block
+							margin-left: 24px	
+							vertical-align: super
+				.soc
+					margin: 35px 0 18px
+					padding-left: 26px
+					ul
+					 li
+							display: inline-block
+							margin-left: 12px
+							width: auto
+							line-height: 0
+							a
+								background: none
+								padding: 0
+								i	
+									font-size: 24px
+									color: $clr_vraptor
+
+		.right_side_cp
+			color: #fff
+			h4
+				font-size: 35px
+				color: $clr_vraptor
+				font-family: 'proxima_nova_blblack'
+				font-weight: 100
+				margin-bottom: 18px
+
+			.wrap_stock
+				height: 152px
+				margin-top: 38px
+				.wrap_timer		
+					float: left
+					p
+						color: $clr_gray
+						font-weight: 700
+					.timer
+						//margin-top: 22px
+						.countdownHolder
+							width: 224px
+						.countDays
+							position: relative
+							margin-right: 3px
+							&:after
+								content: "Days"	
+								position: absolute
+								bottom: -16px
+								letter-spacing: 1px
+								left: 0
+								width: 40px
+								height: 20px
+								color: #FFF
+								font-size: 14px
+								font-family: "proxima_nova_ltlight"
+								//margin-top: 10px
+						.countHours
+							position: relative
+							margin-right: 3px
+							&:after
+								content: "Hours"	
+								position: absolute
+								bottom: -16px
+								letter-spacing: 1px
+								left: 0
+								width: 40px
+								height: 20px
+								color: #FFF
+								font-size: 14px
+								font-family: "proxima_nova_ltlight"		
+						.countMinutes
+							position: relative
+							margin-right: 3px
+							&:after
+								content: "Minutes"	
+								position: absolute
+								bottom: -16px
+								letter-spacing: 1px
+								left: -6px
+								width: 40px
+								height: 20px
+								color: #FFF
+								font-size: 14px
+								font-family: "proxima_nova_ltlight"	
+						.countSeconds
+							position: relative
+							display: none
+							&:after
+								content: "Seconds"	
+								position: absolute
+								bottom: -16px
+								letter-spacing: 1px
+								left: -2px
+								width: 40px
+								height: 20px
+								color: #FFF
+								font-size: 14px
+								font-family: "proxima_nova_ltlight"							
+				.buy_now
+					float: right
+					.price
+						display: block
+						text-align: center
+						small
+							font-size: 16px
+							color: $clr_gray
+							margin-bottom: 6px
+							display: inline-block
+						strong
+							color: #fff
+							font-family: 'proxima_nova_blblack'
+							font-size: 40px
+							font-weight: 100
+							line-height: 0.8	
+					.button
+						background-color: $clr_vraptor	
+						border: none
+						font-size: 20px
+						color: #fff
+						font-family: 'open_sansextrabold'
+						padding: 8px 28px
+						margin-left: 15px
+						vertical-align: top
+						+duration(5)
+						&:hover
+							+opacity(5)		
+
+	
+
+
+				
+.s_products_np
+	margin-top: 30px
+	hr
+		max-width: 1140px	
+	.under_hr
+		text-align: right
+		padding-right: 10px
+		a
+			font-size: 15
+			color: #fefefe
+			cursor: pointer
+			position: relative
+			display: inline-block
+			padding-right: 40px
+			&:before
+				content: ""
+				position: absolute
+				right: 16%
+				top: 40%
+				width: 11px
+				height: 7px
+				background: url(../images/arrow_sd.png) no-repeat	
+	.products
+		min-height: 610px
+		.wrap_h3
+			background-color: $clr_btn
+			padding: 20px 14px
+			max-width: 1140px
+			h3
+				font-size: 50px
+				font-family: 'proxima_nova_blblack'
+				color:  #fefefe	
+				font-weight: inherit
+		
+		.wrap_slider
+			position: relative
+			.slider
+				.owl-carousel .owl-controls 
+				
+				.owl-nav
+					position: absolute
+					right: 4%
+					top: -9%
+
+					.owl-prev	
+						display: inline-block
+						transition: all 0.25s ease-in 0s
+						width: 30px
+						height: 30px
+						border: 1px solid #fff
+						background: url(../images/arrow.png) no-repeat -100% 45%
+						&.active
+							background: #303030 url(../images/arrow.png) no-repeat -100% 45%
+						&:hover
+							background: #303030 url(../images/arrow.png) no-repeat -100% 45%
+					.owl-next
+						display: inline-block
+						width: 30px
+						height: 30px
+						border: 1px solid #fff
+						background: url(../images/arrow.png) no-repeat 200% 45%
+						&.active
+							background: #303030 url(../images/arrow.png) no-repeat 200% 45%
+						&:hover
+							background: #303030 url(../images/arrow.png) no-repeat 200% 45%	
+							
+					.owl-dots
+		
+		.item
+			height: 488px
+			background-color: #fff
+			margin: 25px 2px
+			width: 269px
+			border: 3px solid #8b8b8b
+			box-sizing: border-box
+			position: relative
+			//@include transition(100)
+			
+			&:hover
+				border: 5px solid $clr_btn
+				margin: 25px 0px	
+
+				.btn_gd
+					+translate(0)
+					+duration(5)
+
+				.about_content
+					+translate(0)
+					+opacity(10)
+					+duration(9)
+				.top_soc
+					+translate(0)
+					+opacity(10)
+					+duration(9)
+					
+				.wrap_img
+					+scale(11)
+					+duration(9)
+
+			.wrap_img
+				text-align: center
+				margin-top: 24%	
+		
+			.top_soc
+				margin-bottom: -10%
+				+opacity(0)
+				+translate(-1)
+				+duration(9)
+				
+				ul
+					margin-top: 10px
+					text-align: center
+					li
+						display: inline-block
+						a
+							display: block
+							background: url(../images/p_icons.png) no-repeat
+							width: 28px
+							height: 18px
+						&:nth-child(2)
+							a
+								background: url(../images/p_icons.png) no-repeat 27% 0	
+						&:nth-child(3)
+							a
+								background: url(../images/p_icons.png) no-repeat 63% 0	
+						&:nth-child(4)
+							a
+								background: url(../images/p_icons.png) no-repeat 100% 0	
+		.wrap_img
+			text-align: center
+			margin-top: 14%
+			img
+				width: 60%
+				display: inline-block
+		.star_about
+				position: absolute
+				bottom: 0 
+				.ul_btn
+					z-index: 9999
+					position: relative
+					margin: 0 -1px
+				.btn_gd
+					padding: 12px 24px
+					margin: 0 auto
+					border: 1px solid #fff
+					text-transform: none
+					text-align: center
+					width: 100%
+					color: #fff
+					font-size: 18px
+					background-color: $main-color
+					+translate(13.5)
+					+duration(9)
+					bottom: 0px
+
+				.about_content
+					height: 134px	
+					padding: 10px 22px
+					background-color: #FFF
+					top: auto
+					+translate(3)
+					+duration(9)
+					+opacity(0)
+					
+
+					.star_head
+						ul
+							text-align: center
+							border-bottom: 1px solid #dbdbdb
+							padding-bottom: 9px
+							li
+								display: inline-block
+								span
+									cursor: pointer
+									display: block
+									width: 21px
+									height: 20px
+									background: url(../images/cont_icons.png) no-repeat
+								&:last-child
+									span
+										background: url(../images/cont_icons.png) no-repeat 35% 0	
+					.wrap_cont
+						padding: 10px
+						.text_cont
+							width: 155px
+							padding-right: 10px
+							margin-bottom: 10px
+							border-right: 1px solid #dbdbdb
+							float: left
+							p
+								margin: 0 0 0 -8px
+								color:  #454545
+								font-size: 14px
+							  
+						.r_icon
+							margin: 25px 0 0 10px
+							float: left
+							span
+								display: block
+								height: 30px
+								cursor: pointer
+								width: 30px
+								background: url(../images/cont_icons.png) no-repeat 100% 100%	
+				.about_content_2,.about_content_3,.about_content_5,.about_content_6,.about_content_8,.about_content_9
+					height: 134px	
+					padding: 10px 22px
+					background-color: #FFF
+					display: none
+					.star_head
+						ul
+							text-align: center
+							border-bottom: 1px solid #dbdbdb
+							padding-bottom: 9px
+							li
+								display: inline-block
+								span
+									cursor: pointer
+									display: block
+									width: 21px
+									height: 20px
+									background: url(../images/cont_icons.png) no-repeat
+								&:last-child
+									span
+										background: url(../images/cont_icons.png) no-repeat 35% 0	
+					.wrap_cont
+						padding: 10px
+						.text_cont
+							width: 155px
+							padding-right: 10px
+							margin-bottom: 10px
+							border-right: 1px solid #dbdbdb
+							float: left
+							p
+								margin: 0 0 0 -8px
+								color:  #454545
+							  
+						.r_icon
+							margin: 25px 0 0 10px
+							float: left
+							span
+								display: block
+								height: 30px
+								cursor: pointer
+								width: 30px
+								background: url(../images/cont_icons.png) no-repeat 100% 100%	
+
+				.ul_btn
+					ul
+						height: 60px
+						li
+							float: left
+							border-right: 1px solid #fff
+							
+							span
+								background-color: $clr_light_gray
+								display: block
+								padding: 20px
+								color:  #5f5f5f
+								text-align: center
+								font-size: 20px
+								font-weight: 900
+								cursor: pointer	
+								font-family: 'proxima_nova_rgregular'
+								height: 60px
+								width: 60px
+								transition: all 0.25s ease-in 0s
+								del
+									font-size: 16px
+									color: #1b1b1b	
+							&:first-child
+								vertical-align: top
+								span
+									padding: 20px 32px
+									width: 137px
+									&.span_del
+										padding: 10px 26px		
+							&:nth-child(2)
+								span
+								 background: $clr_light_gray url(../images/item_icons.png) no-repeat	87% 50%	
+									&:hover
+										background: $main-color url(../images/item_icons.png) no-repeat	-7% 50%
+							&:nth-child(3)
+								border-right: 1px solid $clr_light_gray
+								span
+								 background: $clr_light_gray url(../images/item_icons.png) no-repeat	106% 50%		
+									
+								
+		.col_item
+			padding-left: 0		
+
+.for_vraptor_ps
+	background-color: #1b1b1b
+	padding-top: 50px
+	margin-top: 0px	
+	.products
+		.wrap_h3
+			padding: 15px
+			h3
+				font-size: 35px		
+
+
+
+
+//ALWAYS END
+@import "media.sass"

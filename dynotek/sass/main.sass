@@ -1,0 +1,1432 @@
+//@import "bourbon/bourbon"
+@import "_var.sass"
+
+.main
+	margin: 0
+	padding: 0
+	width: 100%
+	.content
+		.s_slider
+			position: relative
+			.slider
+				height: 850px
+				.slide
+					background-image: url(../images/bg_vrapt.png)
+					background-color: $clr_slider
+					background-position: 55% center
+					background-repeat: no-repeat
+					background-size: cover
+					height: 550px
+					width: 100%
+					&.slide_2
+						background-image: url(../images/bg_shark.png)
+						background-color: $clr_slider
+						background-position: 55% center
+						background-repeat: no-repeat
+						background-size: cover
+					
+					&.slide_3
+						background-image: url(../images/bg_trex.png)
+						background-color: $clr_slider
+						background-position: 55% center
+						background-repeat: no-repeat
+						background-size: cover	
+					.slide-wrap
+						height: 550px
+						.slide-inner
+							margin-right: auto
+							.wrap_text
+								height: 367px
+								padding: 10px
+								h3
+									font-family: 'crookedregular'
+									color:  #ffffff
+									font-size: 220.01px
+									margin-top: 20px
+									line-height: 0.65
+									font-weight: 400
+									text-align: left
+									&.slide_2
+										line-height: 1.1
+										font-family: 'atvicebold'
+										font-size: 130px	
+									&.slide_3
+										line-height: 1.1
+										font-family: 'savaro_stencilregular'
+										font-size: 105px
+							.wrap_img
+								height: 346px 
+								width: 335px
+								position: relative
+								margin: 0 40%
+								bottom: 200px
+								img
+									height: 346px
+									width: 335px
+							.wrap_button
+								margin-top: 50px
+								.button
+									padding: 0px 40px
+									margin-left: 12px
+									background-color: $clr_vraptor
+									color:  #ffffff
+									font-size: 20px
+									font-weight: 700
+									line-height: 46px
+									text-align: left
+									transition: all 0.25s ease-in 0s
+									height: 55px
+									border: none
+									position: relative
+									box-sizing: border-box
+									cursor: pointer
+									display: inline-block
+									padding-top: 4px
+									&::after
+										content: " "
+										position: absolute
+										right: -55px
+										transition: all 0.1s ease-in 0s
+										top: 0
+										height: 55px
+										width: 55px
+										background: $clr_vraptor_alt url(../images/arrow_btn.png) no-repeat 50% 50%
+									&:hover
+										@include opacity(8)
+								.trex_btn
+									background-color: $clr_trex
+									&::after
+										background: $clr_trex_alt url(../images/arrow_btn.png) no-repeat 50% 50%
+								.shark_btn
+									background-color: $clr_shark
+									&::after
+										background: $clr_shark_alt url(../images/arrow_btn.png) no-repeat 50% 50%
+
+			.owl-carousel .owl-controls 
+				background-color: $clr_slider
+				.owl-nav
+					position: relative
+					left: 577px
+					bottom: 118px
+					width: 150px
+					margin: 0 auto
+
+					.owl-prev	
+						display: inline-block
+						transition: all 0.25s ease-in 0s
+						width: 30px
+						height: 30px
+						border: 1px solid #fff
+						background: url(../images/arrow.png) no-repeat -100% 45%
+						&.active
+							background: $clr_btn url(../images/arrow.png) no-repeat -100% 45%
+						&:hover
+							background: $clr_btn url(../images/arrow.png) no-repeat -100% 45%
+					.owl-next
+						display: inline-block
+						width: 30px
+						height: 30px
+						border: 1px solid #fff
+						background: url(../images/arrow.png) no-repeat 200% 45%
+						&.active
+							background: $clr_btn url(../images/arrow.png) no-repeat 200% 45%
+						&:hover
+							background: $clr_btn url(../images/arrow.png) no-repeat 200% 45%	
+				.owl-dots
+					position: relative
+					margin: 0px auto
+					max-width: 1170px
+					height: 300px
+					.owl-dot
+						height: 85%
+						width: 30%
+						transition: all 0.25s ease-in 0s
+						margin: 1.66%
+						display: inline-block
+						box-sizing: 
+						&:first-child
+							background: url(../images/V-raptor.png) no-repeat center center / cover
+							border: 3px solid $clr_vraptor
+							&:hover
+								border: none
+						&:nth-child(2)
+							background: url(../images/Megalodon_2.png) no-repeat	center center / cover								
+							border: 3px solid $clr_shark
+							&:hover
+								border: none	
+						&:nth-child(3)
+							background: url(../images/T-Rex.png) no-repeat	center center / cover								
+							border: 3px solid $clr_trex
+							&:hover
+								border: none
+								
+
+.right_side
+	right: 0
+	top: 50px
+	position: absolute
+	width: 75px
+	height: 100%
+	background-color: #2e2e2e	
+	z-index: 99
+	&.fix
+		position: fixed
+		top: 50px	
+	ul
+		height: 100%
+		position: relative
+		li
+			display: block
+			+duration(3)
+			background-color: $clr_gray
+			width: 75px
+			height: 75px
+			text-align: center
+			padding-top: 30px
+			border-bottom: 1px solid #2e2e2e 
+			border-left: 1px solid #2e2e2e 
+			position: relative
+			span 
+				display: inline-block
+				width: 20px
+				height: 25px
+				text-align: center
+				cursor: pointer
+				color: #fff
+				font-size: 22px
+				//vertical-align: middle
+				i
+					font-size: 22px
+			&:first-child
+				span
+					background: url("../images/forma.png") 0% 0%
+			&:nth-child(2)
+				padding-top: 25px
+				span
+					//background: url("../images/forma.png") 0% 9.8%	
+			&:nth-child(3)
+				padding-top: 25px
+				position: relative
+				i
+					display: none
+			&:nth-child(4)
+				padding-top: 25px
+				span
+					position: relative
+					font-size: 20px
+					i
+						width: 16px
+						height: 16px
+						padding-top: 1.5px
+						top: -9px
+						right: -14px
+						font-size: 12px
+						color: #fefefe
+						border-radius: 50%
+						background-color: $main-color	
+						position: absolute
+					
+			&:nth-child(5)
+				padding-top: 25px
+				span
+					background: url("../images/forma.png") 0% 40%
+
+			&:nth-child(6)
+				padding-top: 25px
+						
+			&:nth-child(7)
+				padding-top: 15px
+				box-shadow: 0 20px 0 0 #111
+				bottom: 70px
+				position: absolute
+				
+				span
+					color:  #fffefe
+					font-size: 22px
+					text-transform: uppercase
+					margin-right: 8px
+					background-image: none	
+					@include transition(5)
+				i	
+					font-size: 12px
+					text-align: center
+					text-transform: uppercase
+					color: #fff	
+			&:hover 
+				background-color: #737373																		
+			&.active
+				background-color: $main-color
+			
+	ul.soc_click
+		right: 0px
+		height: 74px
+		bottom: 0px
+		display: -webkit-inline-flex
+		display: -moz-inline-flex
+		display: -ms-inline-flex
+		display: -o-inline-flex
+		display: inline-flex
+		position: absolute
+		//transition: all .5s ease-in 0s
+		opacity: 0
+		&.open
+			opacity: 1
+		
+		li	
+			display: inline-block
+			padding: 0
+			i
+				font-size: 22px
+			span	
+				height: 74px
+				width: 75px	
+				display: inline-block
+				padding: 12px 0 
+				font-size: 0px
+				i
+					font-size: 20px
+					color: #fff
+					display: block
+					padding-top: 15px
+			&:first-child
+				a
+					background: #3664a2
+					display: block
+					color: #fff
+					padding: 25px 0 24px
+					font-size: 24px
+			&:nth-child(2)
+				a
+					background: #55acee
+					display: block
+					color: #fff
+					padding: 25px 0 24px
+					font-size: 24px
+			&:nth-child(3)
+				a
+					background: #737373		
+					font-size: 24px
+
+	ul.search_click
+		right: 0px
+		height: 74px
+		bottom: 0px
+		display: -webkit-inline-flex
+		display: -moz-inline-flex
+		display: -ms-inline-flex
+		display: -o-inline-flex
+		display: inline-flex
+		position: absolute
+		display: block
+		//+duration(10)
+		+opacity(0)		
+		&.open
+			
+			+opacity(10)
+			.wrap_search
+				display: block
+				animation: myAnimation 0.1s
+				-webkit-animation: myAnimation 0.1s
+		li	
+			display: inline-block
+			padding: 0
+			span	
+				height: 74px
+				width: 75px	
+				display: inline-block
+				padding: 14px 0 
+				font-size: 28px
+			&.wrap_search
+				width: 300px
+				height: 100%
+				background: #737373
+				position: fixed
+				right: 75px
+				top: 50px
+				display: none
+				overflow: auto
+				.wrap_input_search
+					margin: 20px
+					.input_search
+						font-size: 18px
+						padding: 10px 20px
+						width: 210px
+						height: 48px
+						border: 1px solid #5f5f5f
+						font-family: 'proxima_nova_rgregular'
+					.button_search
+						width: 48px
+						height: 48px
+						margin-left: -5px
+						vertical-align: top
+						border: 1px solid #5f5f5f
+						background-color: $main-color
+						color: #fff
+						font-size: 22px
+			
+
+					
+			&:nth-child(2)
+				span
+					background: #737373	
+					color: #fff	
+					padding-top: 22px
+					font-weight: 100	
+
+	ul.store_click
+		right: 0px
+		height: 74px
+		bottom: 0px
+		display: -webkit-inline-flex
+		display: -moz-inline-flex
+		display: -ms-inline-flex
+		display: -o-inline-flex
+		display: inline-flex
+		position: absolute
+		display: block
+		//+duration(10)
+		+opacity(0)		
+		&.open
+			+opacity(10)
+			.wrap_store
+				display: block
+				animation: myAnimation 0.1s
+				-webkit-animation: myAnimation 0.1s
+		
+		li	
+			display: inline-block
+			padding: 0
+			span	
+				height: 74px
+				width: 75px	
+				display: inline-block
+				padding: 14px 0 
+				font-size: 28px
+			&.wrap_store
+				width: 300px
+				height: 100%
+				background: #fff
+				position: fixed
+				padding: 15px
+				right: 75px
+				top: 50px
+				display: none
+				overflow-y: scroll
+
+				.wrap_header
+					padding: 10px 15px
+					background-color: #232323
+					text-align: left
+					h5
+						font-family: 'open_sansbold'
+						font-weight: 100
+						font-size: 16px
+						color: #fff
+						text-transform: uppercase
+				.item_box
+					border-bottom: 1px solid #8b8b8b
+					text-align: left
+					padding: 12px 0
+					.button_close
+						display: inline-block
+						border-radius: 10em
+						border: none
+						background-color: #232323
+						text-align: center
+						vertical-align: middle
+						font-family: 'open_sanslight'
+						font-weight: 100
+						color: #fff
+						width: 20px
+						height: 20px
+						font-size: 12px
+						padding: 3px
+						i
+							font-size: 10px
+
+					.wrap_img
+						display: inline-block
+						width: 28%
+						text-align: center
+					.wrap_price_comp
+						display: inline-block
+						vertical-align: top
+
+						.name	
+							font-size: 15px
+							color: #232323
+							text-align: center	
+							font-family: 'open_sanssemibold'
+							h6
+								font-size: 15px
+								text-transform: uppercase
+								text-align: center
+						.price
+							margin-top: 15px
+							height: 30px
+							i	
+								font-size: 15px
+								color: #737373
+								font-family: 'open_sanslight'
+								margin: 0 6px
+								cursor: pointer
+							span
+								font-size: 15px
+								font-family: 'open_sansbold'
+								color: $clr_btn
+								width: 41px
+								background-image: none
+				
+				.total
+					margin-top: 5px
+					height: 40px
+					white-space: nowrap
+					+flex_between
+					.side_total
+						display: inline-block
+						font-size: 15px
+						color: #737373
+						text-transform: uppercase
+						margin: 0 3px 0 0
+						padding: 0
+						span
+							font-family: 'open_sansregular'
+							width: 98px
+							font-size: 15px
+							background-image: none
+							color: #737373
+							
+						i	
+							font-family: 'open_sansbold'
+
+				.summary
+					.wrap_bothead
+						border: 1px solid #8b8b8b
+						text-align: left
+						p
+							color: #737373
+							font-family: 'open_sansbold'
+							font-size: 15px
+							text-transform: uppercase
+							padding: 10px 14px
+					.payment_block
+						border: 1px solid #8b8b8b
+						border-top: none
+						padding: 1% 0 3% 1%
+						text-align: left
+						.section_block
+							margin: 5px
+							border-bottom: 1px solid #dcdcdc
+							padding: 0 0 2% 8%
+							p
+								padding-left: 0
+							.wrap_bothead
+								border: none
+							.price_p
+								color: #2e2e2e
+								position: relative
+								margin-bottom: 12px	
+								
+								i
+									padding: 0px 7px
+									color: #232323
+									font-size: 14px
+									font-family: 'open_sansbold'
+									left: 48%
+									top: -2px
+									height: 20px
+									width: 20px
+									background-color: #808080
+									border-radius: 50%	
+					
+									margin-left: 5px
+									cursor: pointer
+							.button
+								background-color: $clr_btn
+								border: none
+								font-size: 14px
+								color: #fff
+								font-family: 'open_sansbold'
+								padding: 6px 11px
+								&:hover
+									+opacity(7)
+					.section_block:first-child
+						.price_p
+							&:before
+								content: ""
+								position: absolute
+								left: -9%
+								top: 4px
+								height: 10px
+								width: 10px
+								background-color: $clr_btn
+								border-radius: 50%	
+					.section_block:last-child
+						border: none				
+										
+				.wrap_total
+					margin: 10px 0
+					border-bottom: 1px solid #8b8b8b
+					padding: 10px 5px
+					p
+						text-align: left
+						height: 30px
+						
+						span
+							font-size: 15px
+							text-transform: uppercase
+							color: #737373
+							font-family: 'open_sansbold'
+							height: 16px
+							float: left
+							padding: 0
+							width: 60%
+
+						i	
+							float: right
+							display: inline-block
+					.total
+						margin-top: 10px
+						height: 20px
+						font-family: 'open_sansbold'
+						span
+							font-size: 22px
+							text-transform: uppercase
+							color: $clr_btn
+							height: 16px
+							float: left
+							padding: 0
+							text-align: left
+							display: inline-block
+						i	
+							float: right
+							display: inline-block
+							font-size: 22px
+							text-transform: uppercase
+							color: $clr_btn
+							vertical-align: top
+					.button
+						font-size: 16px
+						margin: 14px 10px 0
+						color: #fff	
+						background-color: $clr_btn
+						padding: 22px 43px
+						border: none
+						text-transform: uppercase	
+						white-space: nowrap
+						&:hover
+							+duration(3)
+							background-color: green
+							animation: myhover 1s
+							-webkit-animation: myhover 1s
+				.login		
+					.wrap_input
+						margin-top: 12px
+						padding: 0 4px
+						input
+							height: 50px
+							border: 1px solid #606060
+							font-size: 15px
+							color: #232323
+							padding: 20px 15px	
+							width: 100%
+							margin: -2px 0px
+							height: auto
+					.button
+						font-size: 16px
+						margin: 10px 16px 0
+						color: #fff	
+						background-color: $clr_btn
+						padding: 15px 85px
+						border: none
+						text-transform: uppercase
+						&:hover
+							+duration(3)
+							background-color: green
+							animation: myhover 1s
+							-webkit-animation: myhover 1s	
+								
+				.registrtion
+					margin-top: 12px
+					padding-bottom: 20px
+					.wrap_bothead
+						color: #232323
+						padding-bottom: 5px
+						font-family: 'open_sansbold'
+						border-bottom: 1px solid #232323
+						text-transform: uppercase
+					.wrap_input
+						margin-top: 10px
+						padding: 0 4px
+						input
+							height: 50px
+							border: 1px solid #606060
+							font-size: 15px
+							color: #232323
+							padding: 20px 15px	
+							width: 100%
+							margin: -2px 0px
+							height: auto
+					p
+						color: #737373
+						font-size: 15px
+						margin-top: 10px
+					.button
+						font-size: 16px
+						margin: 10px 16px 0
+						color: #fff	
+						background-color: $clr_btn
+						padding: 15px 14px
+						border: none
+						text-transform: uppercase
+
+						&:hover
+							+duration(3)
+							background-color: green
+							animation: myhover 1s
+							-webkit-animation: myhover 1s		
+
+							
+
+
+
+
+
+			&:nth-child(2)
+				span
+					background: #fff	
+					color: #737373	
+					padding-top: 22px
+					font-weight: 100		
+
+
+
+	ul.mail_click
+		right: 0px
+		height: 74px
+		bottom: 0
+		display: -webkit-inline-flex
+		display: -moz-inline-flex
+		display: -ms-inline-flex
+		display: -o-inline-flex
+		display: inline-flex
+		position: absolute
+		z-index: 0
+		//transition: all .5s ease-in 0s
+		display: block
+		//+duration(10)
+		+opacity(0)		
+		&.open
+			+opacity(10)
+			.wrap_mail
+				display: block
+				animation: myAnimation 0.1s
+				-webkit-animation: myAnimation 0.1s
+		
+		li	
+			display: inline-block
+			padding: 0
+			span	
+				height: 74px
+				width: 75px	
+				display: inline-block
+				padding: 14px 0 
+				font-size: 28px
+				&:before
+					width: 0
+			&.wrap_mail
+				width: 300px
+				height: 100%
+				background: #737373
+				position: fixed
+				right: 75px
+				top: 50px
+				padding: 20px
+				display: none
+				overflow: auto
+				.block_mail
+					width: 260px
+					border: 7px solid #c9c9c9
+					background-color: #FFF
+					text-align: center
+					padding: 20px 20px
+					color: $clr_slider
+					margin-bottom: 22px
+					h4
+						font-size: 18px
+						color: $main-color
+						//font-family: 'open_sanssemibold'
+						text-transform: uppercase
+						margin-bottom: 30px
+					strong
+						font-size: 50px
+						font-family: 'open_sansextrabold'
+						color: $main-color
+						margin-bottom: 22px
+					p	
+						font-size: 14px
+						color: $clr_slider
+						margin-bottom: 32px
+					a	
+						font-size: 14px
+						display: block
+						color: $clr_slider
+						white-space: nowrap
+						height: 20px
+						margin-bottom: 18px
+
+				
+				
+
+			&:nth-child(2)
+				span
+					background: #737373	
+					color: #fff	
+					padding-top: 22px
+					font-weight: 100	 			
+.s_sign_up
+	margin-top: 30px
+	.sign_up
+		border: 8px solid #2e2e2e
+		margin: 0 16px
+		box-sizing: border-box
+		text-align: center
+		padding: 50px 0
+		.text
+			padding-top: 10px
+			display: inline-block
+			font-family: 'proxima_nova_rgregular'
+			h2
+				font-size: 40px
+				color:  #fffefe
+				font-weight: 400
+				text-transform: uppercase
+			p	
+				font-size: 16px
+				color:  #737373
+				font-weight: 300
+		.wrap_button
+			display: inline-block	
+			vertical-align: top
+			margin-left: 42px
+			padding-top: 20px
+			.button
+				padding: 0px 58px
+				background-color: $clr_btn
+				color:  #fefefe
+				font-size: 15px
+				font-weight: 600
+				line-height: 46px
+				text-align: center
+				transition: all 0.25s ease-in 0s
+				height: 45px
+				width: 180px
+				border: none
+				position: relative
+				box-sizing: border-box
+				&:hover
+					@include opacity(3)
+
+
+.s_top_container
+	margin-top: 30px
+	.top_container
+		max-width: 1140px
+		height: 185px
+		background: transparent url("../images/top_cont.png") repeat scroll 0% 0% / cover
+		margin: 0 auto	
+		padding-top: 30px
+		.text
+			margin: 0 auto
+			max-width: 462px
+			font-weight: 400
+			
+			h4
+				font-family: 'proxima_nova_rgregular'
+				color:  #fffefe
+				font-size: 19px
+				text-transform: uppercase
+				margin-bottom: 4px
+			small
+				font-family: 'proxima_nova_rgregular'
+				font-size: 16px
+				color: #fff
+				font-weight: 300
+				text-align: center	
+				display: block
+				line-height: 20px
+		.wrap_button
+			margin-top: 28px
+			text-align: center
+			.button
+				border: none	
+				background-color: transparent
+				color: #fefefe
+				font-size: 15px
+				font-weight: 400
+				border: 1px solid #fff
+				background-color:  rgba(245, 43, 43, 0)
+				width: 178px
+				height: 38px
+				transition: all 0.5s ease-in 0s
+				position: relative
+				text-transform: uppercase
+				&:before
+					content: ""
+					position: absolute
+					right: 16%
+					top: 40%
+					width: 11px
+					height: 7px
+					background: url(../images/arrow_sd.png) no-repeat	
+				&:hover
+					border: none	
+	
+	.border_conteiner
+		border: 8px solid #737373
+		height: 185px
+		max-width: 1140px
+		margin: 0 auto
+		.left_top_container
+			width: 590px
+			height: 100%
+			display: inline-block
+			background: transparent url("../images/top_cont.png") repeat scroll -113%
+			margin: 0
+			padding: 0
+			vertical-align: top
+		.right_top_container
+			display: inline-block
+			padding-top: 20px
+			height: 164px
+			width: 529px
+			.text
+				margin: 0 auto
+				max-width: 462px
+				font-weight: 400
+				
+				h4
+					font-family: 'proxima_nova_rgregular'
+					color:  #fffefe
+					font-size: 19px
+					text-transform: uppercase
+					margin-bottom: 4px
+				small
+					font-family: 'proxima_nova_rgregular'
+					font-size: 16px
+					color: #fff
+					font-weight: 300
+					text-align: center	
+					display: block
+					line-height: 20px
+			.wrap_button
+				margin-top: 28px
+				text-align: center
+				.button
+					border: none	
+					background-color: transparent
+					color: #fefefe
+					font-size: 15px
+					font-weight: 400
+					border: 1px solid #fff
+					background-color:  rgba(245, 43, 43, 0)
+					width: 178px
+					height: 38px
+					transition: all 0.25s ease-in 0.25s
+					position: relative
+					text-transform: uppercase
+					&:before
+						content: ""
+						position: absolute
+						right: 16%
+						top: 40%
+						width: 11px
+						height: 7px
+						background: url(../images/arrow_sd.png) no-repeat	
+					&:hover
+						border: none	
+
+.s_products
+	margin-top: 30px
+	
+	.under_hr
+		text-align: right
+		padding-right: 10px
+		span
+			font-size: 15
+			color: #fefefe
+			cursor: pointer
+			position: relative
+			display: inline-block
+			padding-right: 40px
+			&:before
+				content: ""
+				position: absolute
+				right: 16%
+				top: 40%
+				width: 11px
+				height: 7px
+				background: url(../images/arrow_sd.png) no-repeat	
+	.products
+		min-height: 610px
+		.wrap_h3
+			background-color: $clr_btn
+			padding: 7px 14px
+			max-width: 833px
+			h3
+				font-size: 50px
+				font-family: 'proxima_nova_blblack'
+				color:  #fefefe	
+				font-weight: inherit
+		
+		.wrap_slider
+			position: relative
+			.slider
+				.owl-carousel .owl-controls 
+				
+				.owl-nav
+					position: absolute
+					right: 4%
+					top: -9%
+
+					.owl-prev	
+						display: inline-block
+						transition: all 0.25s ease-in 0s
+						width: 30px
+						height: 30px
+						border: 1px solid #fff
+						background: url(../images/arrow.png) no-repeat -100% 45%
+						&.active
+							background: #303030 url(../images/arrow.png) no-repeat -100% 45%
+						&:hover
+							background: #303030 url(../images/arrow.png) no-repeat -100% 45%
+					.owl-next
+						display: inline-block
+						width: 30px
+						height: 30px
+						border: 1px solid #fff
+						background: url(../images/arrow.png) no-repeat 200% 45%
+						&.active
+							background: #303030 url(../images/arrow.png) no-repeat 200% 45%
+						&:hover
+							background: #303030 url(../images/arrow.png) no-repeat 200% 45%	
+							
+					.owl-dots
+			.slide
+				display: +flex
+				.item
+					height: 488px
+					background-color: #fff
+					margin: 25px auto
+					width: 100%
+					max-width: 269px
+					border: 3px solid #8b8b8b
+					box-sizing: border-box
+					position: relative
+					text-align: center
+					&.active_sale_raptor
+						position: relative
+						border: 5px solid $clr_vraptor
+						.sale
+							padding: 14px 12px
+							background-color: $clr_vraptor
+							position: absolute
+							//width: 36px
+							span
+								font-size: 12px
+								color: #fff
+						.star_about	
+							.btn_gd	
+								background-color: $clr_vraptor
+								
+					&:hover
+						border: 5px solid $clr_btn	
+						margin: 25px -2px	
+
+						.btn_gd
+							//bottom: 186px
+							+translate(0)
+							+duration(5)
+
+						.about_content
+							+translate(0)
+							+opacity(10)
+							+duration(9)
+							//opacity: 1
+							//display: block
+
+						.top_soc
+							+translate(0)
+							+opacity(10)
+							+duration(9)
+							
+						.wrap_img
+							+scale(11)
+							+duration(9)	
+						
+						.star_about
+							//.ul_btn
+								ul
+									li
+										&:nth-child(2)
+											span
+												background: $main-color url(../images/item_icons.png) no-repeat	-7% 50%
+			
+					.wrap_img
+						text-align: center
+						margin-top: 24%
+
+					.top_soc
+						margin-bottom: -10%
+						+opacity(0)
+						+translate(-1)
+						+duration(9)
+						
+						ul
+							margin-top: 10px
+							text-align: center
+							li
+								display: inline-block
+								a
+									display: block
+									font-size: 18px
+									color: $main-color
+									width: 28px
+									height: 18px
+								
+				.wrap_img
+					text-align: center
+					margin-top: 14%
+					img
+						width: 70%
+						display: inline-block
+				
+				.star_about
+						position: absolute
+						bottom: 0 
+						.btn_gd
+							padding: 12px 0px
+							margin: 0 auto
+							border: 1px solid #fff
+							text-transform: uppercase
+							text-align: center
+							width: 100%
+							color: #fff
+							font-size: 18px
+							background-color: $main-color
+							white-space: nowrap
+							+translate(13.5)
+							+duration(9)
+							bottom: 0px
+							z-index: 9999
+
+						.about_content
+							height: 134px	
+							padding: 10px 22px
+							background-color: #FFF
+							text-align: left
+							top: auto
+							+translate(3)
+							+duration(9)
+							+opacity(0)
+
+							.star_head
+								ul
+									text-align: center
+									border-bottom: 1px solid #dbdbdb
+									padding-bottom: 9px
+									li
+										display: inline-block
+										span
+											cursor: pointer
+											display: block
+											width: 21px
+											height: 20px
+											background: url(../images/cont_icons.png) no-repeat
+										&:last-child
+											span
+												background: url(../images/cont_icons.png) no-repeat 35% 0	
+							.wrap_cont
+								padding: 10px
+								.text_cont
+									width: 70%
+									padding-right: 10px
+									margin-bottom: 10px
+									border-right: 1px solid #dbdbdb
+									float: left
+									p
+										margin: 0 0 0 -8px
+										color:  #454545
+										font-size: 14px
+									  
+								.r_icon
+									margin: 25px 0 0 10px
+									float: left
+									span
+										display: block
+										height: 30px
+										cursor: pointer
+										width: 30px
+										background: url(../images/cont_icons.png) no-repeat 100% 100%	
+						.about_content_2,.about_content_3,.about_content_5,.about_content_6,.about_content_8,.about_content_9
+							height: 134px	
+							padding: 10px 22px
+							background-color: #FFF
+							display: none
+							.star_head
+								ul
+									text-align: center
+									border-bottom: 1px solid #dbdbdb
+									padding-bottom: 9px
+									li
+										display: inline-block
+										span
+											cursor: pointer
+											display: block
+											width: 21px
+											height: 20px
+											background: url(../images/cont_icons.png) no-repeat
+										&:last-child
+											span
+												background: url(../images/cont_icons.png) no-repeat 35% 0	
+							.wrap_cont
+								padding: 10px
+								.text_cont
+									//width: 155px
+									padding-right: 10px
+									margin-bottom: 10px
+									border-right: 1px solid #dbdbdb
+									float: left
+									p
+										margin: 0 0 0 -8px
+										color:  #454545
+									  
+								.r_icon
+									margin: 25px 0 0 10px
+									float: left
+									span
+										display: block
+										height: 30px
+										cursor: pointer
+										width: 30px
+										background: url(../images/cont_icons.png) no-repeat 100% 100%	
+
+						.ul_btn
+							// display: flex
+							// display: webkit-inline-flex
+							ul
+								height: 60px
+								display: flex
+								display: -webkit-flex
+								flex-direction: row
+								-webkit-flex-direction: row
+								-ms-flex-direction: row
+								-moz-flex-direction: row
+								justify-content: space-between
+								-ms-justify-content: space-between
+								-moz-justify-content: space-between
+								-webkit-justify-content: space-between
+								width: 100%
+								li
+									// display: inline-block
+									border-right: 1px solid #fff
+									flex: 1 1 60px;
+									-webkit-flex: 1 1 100px;
+									-ms-flex: 1 1 100px;
+									-moz-flex: 1 1 100px;
+									align-self: center
+									-webkit-align-self: center
+									-ms-align-self: center
+									-moz-align-self: center
+									// margin-right: -4px
+									
+									span
+										background-color: $clr_light_gray
+										display: block
+										color:  #5f5f5f
+										// text-align: center
+										font-size: 20px
+										font-weight: 900
+										cursor: pointer	
+										font-family: 'proxima_nova_rgregular'
+										align-self: center
+										-webkit-align-self: center
+										// width: 60px
+										transition: all 0.25s ease-in 0s
+										padding: 20px 0
+										max-height: 60px
+										&.span_del
+											padding: 10px 0	
+										del
+											font-size: 16px
+											color: #1b1b1b
+											
+									&:first-child
+										flex: 4 1 120px;
+										-webkit-flex: 4 1 180px;
+										-moz-flex: 4 1 180px;
+										-ms-flex: 4 1 180px;
+										// vertical-align: top
+										// width: 53%
+										span
+											// padding: 10px
+									  //   max-width: 137px
+											// width: 100%
+											&.span_del
+												// padding: 10px 26px		
+									&:nth-child(2)
+										span
+											font-weight: 100
+											color: #737373
+											&:hover
+												color: #fff
+												background-color: $main-color
+									&:nth-child(3)
+										border-right: 1px solid $clr_light_gray
+										span
+											font-weight: 100
+											color: #737373
+
+				.col_item
+					padding-left: 0
+			
+.r_block
+	height: 648px
+	position: relative
+	max-width: 269px
+	margin-bottom: 20px
+	border: 1px solid $main-color
+	background: url(../images/ASUS_ROG_G11.png) no-repeat center center / cover
+	.rb_bottom
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 135px
+		.rb_text
+			padding-left: 16px
+			line-height: 30px
+			h4,p
+				font-family: 'proxima_nova_rgregular'
+				color: #fffefe
+				font-size: 24px
+				text-align: left
+				margin: 0
+			h4
+				text-transform: uppercase
+		.rb_btn
+			text-align: center
+			background-color: #cd1b1b;
+			border: none
+			padding: 27px 85px
+			height: 65px
+			width: 100%
+			position: relative
+			margin-top: 10px
+			span
+				font-size: 15px
+				color: #fff
+				&:after
+					content: ""
+					position: absolute
+					right: 28%
+					top: 43%
+					width: 9px
+					height: 16px
+					background: url(../images/rb_arrow.png) no-repeat	
+.footer
+	margin-top: 30px
+	.wrap-col
+		height: 322px
+	.inner_footer
+		border-top: 3px solid $clr_footer
+		border-bottom: 1px solid $clr_gray
+		min-height: 344px
+		margin: 0 auto
+		padding: 50px 0 60px 0
+		max-width: 1140px
+		h5
+			color: $clr_footer
+			text-transform: uppercase
+			font-family: 'proxima_nova_rgregular'
+			margin-bottom: 25px
+			text-align: left
+		ul
+			li
+				margin-bottom: 20px
+				a
+					color: #b8b8b8
+					font-weight: 300
+		ul.ul_icons	
+			li
+				a
+					display: inline-block
+					width: 230px
+					padding-left: 25px
+				&:nth-child(1)
+					a
+						background: url(../images/footer_icons.png) no-repeat 0 -20%
+				&:nth-child(2)
+					a
+						background: url(../images/footer_icons.png) no-repeat 0 60%
+				&:nth-child(3)
+					a
+						background: url(../images/footer_icons.png) no-repeat 0 100%			
+						
+
+
+		.soc
+			ul 
+				li	
+					margin: 0
+					display: inline-block
+					a	
+						display: block
+						height: 30px
+						width: 38px	
+						i
+							color: $clr_footer_2
+							font-size: 30px
+		.submit
+			.input-submit
+				margin-top: 20px
+				
+				min-width: 258px
+				height: 40px
+				.input_submit
+					border: 1px solid $clr_gray		
+					color: $clr_gray
+					width: 60%
+					height: 100%
+					font-size: 15px
+					padding: 0px 10px
+					background-color: transparent
+					display: inline-block	
+					margin-right: -5px
+				.button
+					display: inline-block
+					color: #fff
+					padding: 0 9px
+					font-size: 15px
+					font-weight: 700
+					background-color: $clr_footer_2
+					transition: all 0.25s ease-in 0.1s
+					height: 100%
+					vertical-align: top
+					border: 1px solid $clr_gray	
+					&:hover
+						@include opacity(3)		
+	.copyright
+		text-align: center
+		p
+			span
+				color: $clr_gray
+				border-right: 2px solid $clr_gray
+				padding: 0 8px
+				margin: 0
+				&:last-child
+					border-right: none
+//ALWAYS END
+@import "media.sass"
+
+
+

@@ -1,0 +1,692 @@
+@import "_var.sass"
+
+.navigation_cp
+	width: 100%
+	background-color: #232323
+	height: 30px
+	.nav_np
+		padding: 7px 15px
+		max-width: 1170px
+		margin: 0 auto
+		ul
+			li
+				display: inline-block	
+				margin-right: 15px
+				a
+					color: rgba(255, 255, 255, 0.2)	
+					font-size: 12px
+					&:hover
+						color: $clr_btn
+					&.active
+						color: $clr_btn		
+
+.first_screen
+	min-height: 460px
+	background-color: $clr_btn					
+	.inner_first_creen
+
+		.about_categories
+			border-bottom: 1px solid #dc6060
+
+			.wrap_h4
+				margin: 10px 0 24px 0
+				border-bottom: 1px solid #dc6060
+				padding-bottom: 10px
+				h4
+					font-family: 'proxima_nova_blblack'
+					font-size: 55px
+					padding: 0
+					color: #fff
+					font-weight: 100
+			.wrap_img
+				display: inline-block
+				vertical-align: top
+				margin-bottom: 20px
+			.wrap_characteristics
+				margin-left: 10%
+				display: inline-block
+				vertical-align: bottom	
+				p
+					color: #fff	
+					margin-bottom: 44px	
+					span
+						font-size: 40px
+						display: inline-block
+						float: none
+						text-align: center
+						width: 45px
+					i
+						display: inline-block
+						vertical-align: top
+						margin-left: 24px
+
+		.about_text
+			color: #fefefe
+			padding-top: 20px
+			margin-bottom: 20px	
+			span
+				color: #232323
+				font-family: 'open_sanssemibold'	
+				cursor: pointer
+				&:hover
+					text-decoration: underline		
+
+		.current_promo
+			margin: 14px 10px 28px 10px
+			width: 534px
+			height: 414px
+			background-color: #1b1b1b
+			border: 4px solid #8b8b8b
+			padding: 26px 34px
+			.wrap_head
+				h4
+					color: $clr_btn
+					font-size: 35px
+					font-family: 'open_sanssemibold'
+					span
+						//font-family: 'icomoon_har'
+						color: #424242
+						font-size: 26px
+			hr	
+				background-color: #5e5e5e	
+				margin: 10px 18px	
+
+			.content_promo
+				width: 424px
+				margin: 5px auto
+				.wrap_timer
+					padding: 12px 20px 14px 22px
+					border-top: 1px solid #5e5e5e
+					border-bottom: 1px solid #5e5e5e
+					.text
+						display: inline-block
+						width: 212px
+						text-align: center
+						color: #fff
+						
+						h5
+							font-size: 24px
+							font-family: 'open_sansextrabold'
+							font-weight: 100
+							margin-bottom: 8px
+
+					.timer
+						vertical-align: top
+						display: inline-block
+						.countdownHolder
+							width: 158px
+							height: 80px
+							margin-top: -20px
+						.countDays
+							position: relative
+							margin-right: 3px
+							&:after
+								content: "Days"	
+								position: absolute
+								bottom: -16px
+								letter-spacing: 1px
+								left: 0
+								width: 40px
+								height: 20px
+								color: #FFF
+								font-size: 14px
+								font-family: "proxima_nova_ltlight"
+								//margin-top: 10px
+						.countHours
+							position: relative
+							margin-right: 3px
+							&:after
+								content: "Hours"	
+								position: absolute
+								bottom: -16px
+								letter-spacing: 1px
+								left: 0
+								width: 40px
+								height: 20px
+								color: #FFF
+								font-size: 14px
+								font-family: "proxima_nova_ltlight"		
+						.countMinutes
+							position: relative
+							margin-right: 3px
+							&:after
+								content: "Minutes"	
+								position: absolute
+								bottom: -16px
+								letter-spacing: 1px
+								left: -6px
+								width: 40px
+								height: 20px
+								color: #FFF
+								font-size: 14px
+								font-family: "proxima_nova_ltlight"	
+						.countSeconds
+							position: relative
+							display: none
+							&:after
+								content: "Seconds"	
+								position: absolute
+								bottom: -16px
+								letter-spacing: 1px
+								left: -2px
+								width: 40px
+								height: 20px
+								color: #FFF
+								font-size: 14px
+								font-family: "proxima_nova_ltlight"		
+		
+		.model_set
+			padding: 10px 0 10px 16px
+			.wrap_img
+				display: inline-block
+			.side_info
+				display: inline-block
+				vertical-align: top
+				float: right
+				padding-right: 15px
+				.head_model
+					height: 36px
+					margin-bottom: 14px
+					h6
+						font-family: 'proxima_nova_blblack'
+						font-size: 24px
+						color: #fefefe	
+						font-weight: 100
+						padding: 0
+					a
+						font-size: 12px
+						color: $clr_trex_alt
+						font-family: 'proxima_nova_blblack'
+						font-weight: 100
+						cursor: pointer
+						width: 70px
+						i	
+							
+							font-size: 8px
+							margin-left: 3px
+						&:hover
+							i
+								margin-left: 4px
+
+				.wrap_characteristics
+					display: inline-block
+					vertical-align: bottom
+					color: #898989	
+					p
+						margin-bottom: 8px	
+						span
+							font-size: 25px
+							width: 25px
+							display: inline-block
+							float: none
+						i
+							display: inline-block
+							vertical-align: top
+							margin-left: 24px
+
+			.buy_now
+				margin: 10px auto
+				text-align: center
+				.price
+					display: inline-block
+					text-align: center
+					small
+						font-size: 18px
+						color: $clr_gray
+					strong
+						color: #fff
+						font-family: 'proxima_nova_blblack'
+						font-size: 40px
+						font-weight: 100	
+				.button
+					background-color: $clr_trex_alt		
+					border: none
+					font-size: 20px
+					color: #fff
+					font-family: 'open_sansextrabold'
+					padding: 18px 45px
+					margin-left: 15px
+					vertical-align: top
+					+duration(5)
+					&:hover
+						+opacity(5)	
+
+.wrap_main_body
+	margin: 50px 0
+	.main_body
+		.nav_bar
+			.top_head
+				background-color: $clr_btn
+				padding: 7px 16px
+				font-size: 20px
+				color: #fefefe
+				font-family: 'open_sansbold'
+			.sup_head
+				font-size: 20px
+				color: #fefefe
+				font-family: 'open_sansbold'
+				padding: 12px 10px
+				background-color: #2c2c2c
+				margin: 6px 3px
+			.interval_price
+				margin: 15px auto 0px
+				color: #fefefe
+				padding-bottom: 20px
+				border-bottom: 3px solid #626262
+				input
+					width: 24%
+					height: 35px
+					color: #626262
+					border: 1px solid #898989
+					padding-left: 5px
+					margin: 0 3%
+				.button
+					padding: 10px 7px
+					background-color: $main-color
+					border: none
+					margin-left: 15px	
+			
+			.filter-price
+				padding: 12px 5px 26px 5px
+				border-bottom: 3px solid #626262
+				&.border-none
+					border: none
+				li
+					margin-bottom: 18px
+					input[type="checkbox"] 
+	    			display: none 		
+					input[type="checkbox"] + label::before 
+				    content: ""
+				    display: inline-block
+				    width: 18px
+				    height: 18px
+				    margin-right: 8px
+				    vertical-align: middle
+				    border: 1px solid #CFCFCF
+					input[type="checkbox"]:checked+label::before
+						border: none
+						background-color: $main-color
+				 		
+					label
+						cursor: pointer
+						vertical-align: middle
+						font-family: 'open_sanslight'
+						font-size: 15px
+						color: #fff
+
+					
+					
+		.categories_list
+			.header_list	
+				.top_header
+					height: 35px
+					border-bottom: 3px solid $main-color
+					.sort_by
+						display: inline-block	
+						color: #fff
+						padding: 7px 115px 9px 10px
+						border: 1px solid $main-color
+						margin-left: 17px
+					.product_page
+						display: inline-block
+						float: right
+						vertical-align: top
+						margin: 8px 14px 14px 14px
+						ul 
+							li	
+								display: inline-block	
+								a
+									color: #6f6f6f
+									padding: 9px
+									&:hover
+										background-color: $main-color
+										color: #fff
+									&.active	
+										background-color: $main-color
+										color: #fff
+								&:last-child
+									a	
+										color: #fff
+				.filter
+					padding: 11px 24px 16px 24px
+					color: #6f6f6f
+					font-size: 15px
+					font-family: 'open_sanslight'
+					.model
+						display: inline-block
+						margin-right: 16px
+						span
+							margin-right: 16px
+						i	
+							font-size: 10px
+							cursor: pointer
+							vertical-align: middle
+							color: #5e5e5e
+							+duration(3)
+							&:hover
+								color: $main-color
+					.clear
+						display: inline-block
+						color: $main-color
+						margin-right: 16px
+						cursor: pointer	
+					.chosen
+						display: inline-block
+						color: #898989	
+						margin-top: 5px
+
+	.pagination_top
+		border-bottom: 1px solid #8b8b8b
+		font-size: 14px
+		margin-bottom: 15px
+		.view_page
+			display: inline-block
+			padding: 7px 10px 0 10px
+			color: #fff
+		.product_page
+			display: inline-block
+			vertical-align: top
+			margin: 8px 14px
+			ul 
+				li	
+					display: inline-block
+					margin-right: -3px
+					a
+						color: #6f6f6f
+						padding: 8px 11px 7px
+						box-sizing: border-box
+						&:hover
+							background-color: $main-color
+							color: #fff
+							outline: 1px solid #8b8b8b
+							outline-offset: -1px
+						&.active	
+							background-color: $main-color
+							color: #fff
+							outline:  1px solid #8b8b8b
+							outline-offset: -1px
+					&:first-child
+						a
+							background-color: #2e2e2e	
+							&:hover
+								background-color: #8b8b8b
+
+					&:last-child
+						a	
+							background-color: #8b8b8b
+							color: #fff						
+	.top_head
+		background-color: $clr_btn
+		padding: 7px 16px
+		font-size: 20px
+		color: #fefefe
+		font-family: 'open_sansbold'fir
+
+	.products_card
+		margin: 0px 0 0px -20px	
+		min-height: 530px
+		padding-left: 16px
+		//&.border_red
+			//border-bottom: 3px solid $main-color 	
+		.item
+			height: 488px
+			background-color: #fff
+			margin: 25px auto
+			width: 100%
+			max-width: 269px
+			border: 3px solid #8b8b8b
+			box-sizing: border-box
+			position: relative
+			text-align: center
+			//@include transition(100)
+			
+			&:hover
+				border: 5px solid $clr_btn
+				margin: 25px auto	
+
+				.btn_gd
+					+translate(0)
+					+duration(5)
+
+				.about_content
+					+translate(0)
+					+opacity(10)
+					+duration(9)
+				.top_soc
+					+translate(0)
+					+opacity(10)
+					+duration(9)
+						
+				.wrap_img
+					+scale(11)
+					+duration(9)
+
+			.wrap_img
+				text-align: center
+				margin-top: 24%	
+			
+			.top_soc
+				margin-bottom: -10%
+				+opacity(0)
+				+translate(-1)
+				+duration(9)
+					
+				ul
+					margin-top: 10px
+					text-align: center
+					li
+						display: inline-block
+						a
+							display: block
+							background: url(../images/p_icons.png) no-repeat
+							width: 28px
+							height: 18px
+						&:nth-child(2)
+							a
+								background: url(../images/p_icons.png) no-repeat 27% 0	
+						&:nth-child(3)
+							a
+								background: url(../images/p_icons.png) no-repeat 63% 0	
+						&:nth-child(4)
+							a
+								background: url(../images/p_icons.png) no-repeat 100% 0	
+		.wrap_img
+			text-align: center
+			margin-top: 14%
+			img
+				width: 85%
+				display: inline-block
+		.star_about
+				position: absolute
+				width: 100%
+				bottom: 0 
+				.ul_btn
+					z-index: 1
+					position: relative
+					margin: 0px 2px 0 -2px
+				.btn_gd
+					padding: 12px 24px
+					margin: 0 auto
+					border: 1px solid #fff
+					text-transform: uppercase
+					font-weight: 100
+					text-align: center
+					width: 100%
+					color: #fff
+					font-size: 18px
+					background-color: $main-color
+					+translate(13.5)
+					+duration(9)
+					bottom: 0px
+
+				.about_content
+					height: 134px	
+					padding: 10px 22px
+					background-color: #FFF
+					top: auto
+					+translate(3)
+					+duration(9)
+					+opacity(0)
+						
+
+					.star_head
+						ul
+							text-align: center
+							border-bottom: 1px solid #dbdbdb
+							padding-bottom: 9px
+							li
+								display: inline-block
+								span
+									cursor: pointer
+									display: block
+									width: 21px
+									height: 20px
+									background: url(../images/cont_icons.png) no-repeat
+								&:last-child
+									span
+										background: url(../images/cont_icons.png) no-repeat 35% 0	
+					.wrap_cont
+						padding: 10px
+						.text_cont
+							width: 70%
+							padding-right: 10px
+							margin-bottom: 10px
+							border-right: 1px solid #dbdbdb
+							float: left
+							p
+								margin: 0 0 0 -8px
+								color:  #454545
+								font-size: 14px
+								  
+						.r_icon
+							margin: 25px 0 0 10px
+							float: left
+							span
+								display: block
+								height: 30px
+								cursor: pointer
+								width: 30px
+								background: url(../images/cont_icons.png) no-repeat 100% 100%	
+				.about_content_2,.about_content_3,.about_content_5,.about_content_6,.about_content_8,.about_content_9
+					height: 134px	
+					padding: 10px 22px
+					background-color: #FFF
+					display: none
+					.star_head
+						ul
+							text-align: center
+							border-bottom: 1px solid #dbdbdb
+							padding-bottom: 9px
+							li
+								display: inline-block
+								span
+									cursor: pointer
+									display: block
+									width: 21px
+									height: 20px
+									background: url(../images/cont_icons.png) no-repeat
+								&:last-child
+									span
+										background: url(../images/cont_icons.png) no-repeat 35% 0	
+					.wrap_cont
+						padding: 10px
+						.text_cont
+							padding-right: 10px
+							margin-bottom: 10px
+							border-right: 1px solid #dbdbdb
+							float: left
+							
+							p
+								margin: 0 0 0 -8px
+								color:  #454545
+								  
+						.r_icon
+							margin: 25px 0 0 10px
+							float: left
+							span
+								display: block
+								height: 30px
+								cursor: pointer
+								width: 30px
+								background: url(../images/cont_icons.png) no-repeat 100% 100%	
+
+				.ul_btn
+					ul
+						height: 60px
+						li
+							display: inline-block
+							border-right: 1px solid #fff
+							margin-right: -4px
+							
+							span
+								background-color: $clr_light_gray
+								display: block
+								padding: 20px
+								color:  #5f5f5f
+								text-align: center
+								font-size: 20px
+								font-weight: 900
+								cursor: pointer	
+								font-family: 'proxima_nova_rgregular'
+								height: 60px
+								width: 60px
+								transition: all 0.25s ease-in 0s
+								del
+									font-size: 16px
+									color: #1b1b1b	
+							&:first-child
+								vertical-align: top
+								width: 50%
+								span
+									padding: 20px 15%
+							    max-width: 137px
+									width: 100%
+									&.span_del
+										padding: 10px 26px		
+							&:nth-child(2)
+								span
+									font-weight: 100
+									color: #737373
+								 	//background: $clr_light_gray url(../images/item_icons.png) no-repeat	87% 50%	
+									&:hover
+										color: #fff
+										background-color: $main-color
+										//background: $main-color url(../images/item_icons.png) no-repeat	-7% 50%
+							&:nth-child(3)
+								border-right: 1px solid $clr_light_gray
+								span
+									font-weight: 100
+									color: #737373
+								 //background: $clr_light_gray url(../images/item_icons.png) no-repeat	106% 50%		
+										
+									
+				.col_item
+					padding-left: 0		
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "media.sass"

@@ -1,0 +1,46 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+section, footer{
+	display: block;
+}
+
+
+/*----------------------------
+	Main Section
+-----------------------------*/
+
+#note{
+	color: #fff;
+	font-size: 14px;
+	font-family: 'proxima_nova_ltlight';
+	padding: 4px;
+	text-align: center;
+	width: 217px;
+}
+

@@ -1,0 +1,46 @@
+.countdownHolder{
+	width:210px;
+	font-size: 30px ;
+	font-family: 'proxima_nova_blblack';
+	text-align:center;
+	letter-spacing:-3px;
+}
+
+.position{
+	display: inline-block;
+	height: .7em;
+	position: relative;
+	width: 17px;
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width:1em;
+	text-align:center;
+	color:#fff;
+	letter-spacing: 12px;
+}
+
+
+
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+.countDiv{
+	display:inline-block;
+	width:16px;
+	height:1.6em;
+	position:relative;
+}
