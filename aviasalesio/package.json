@@ -2,13 +2,13 @@
   "name": "aviasalesio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maestrotype.github.io/aviasalesio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
-  "homepage": "https://maestrotype.github.io/aviasalesio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
