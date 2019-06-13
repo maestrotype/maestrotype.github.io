@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://maestrotype.github.io/aviasales",
+  "homepage": "http://maestrotype.github.io/aviasales2",
   "eslintConfig": {
     "extends": "react-app"
   },
